@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeInference", "TypeInference\TypeInference.csproj", "{B01B4DC2-FD5D-4951-9DD4-8F20A93BFB1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuiltInType", "BuiltInType\BuiltInType.csproj", "{2A74D58E-5697-4DFF-B503-19EECFB786D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B01B4DC2-FD5D-4951-9DD4-8F20A93BFB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B01B4DC2-FD5D-4951-9DD4-8F20A93BFB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B01B4DC2-FD5D-4951-9DD4-8F20A93BFB1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A74D58E-5697-4DFF-B503-19EECFB786D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A74D58E-5697-4DFF-B503-19EECFB786D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A74D58E-5697-4DFF-B503-19EECFB786D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A74D58E-5697-4DFF-B503-19EECFB786D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
