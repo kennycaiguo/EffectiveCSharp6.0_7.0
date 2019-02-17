@@ -19,8 +19,8 @@ namespace Cast
         public static object GetObject()
         {
             //return new MyType();
-            //return new MyType2();
-            return null;
+            return new MyType2();
+            //return null;
         }
     }
     class Program
@@ -38,12 +38,12 @@ namespace Cast
                 }
                 else
                 {
-                    Console.WriteLine("o is MyType");
+                    Console.WriteLine("o is casted to MyType");
                 }
             }
             catch (InvalidCastException)
             {
-                Console.WriteLine("o is not MyType");
+                Console.WriteLine("o is not casted to MyType");
             }
         }
     }
