@@ -27,3 +27,10 @@
 	・Console.WriteLine($"円周率の値は{(round ? Math.PI.ToString() : Math.PI.ToString("F2"))}");
 	において、リテラル文字列指定$@"は不要
 	・補完文字列途中で改行する方法が不明
+	
+2019.02.23
+項目5：カルチャ固有の文字列よりもFormattableStringを使用すること
+(コメント)
+	・コード例のstring.Fromat(null,・・・)はランタイムエラーとなる。代わりに、
+	　src.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-de"))
+	とした
