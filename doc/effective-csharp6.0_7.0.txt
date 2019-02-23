@@ -20,3 +20,10 @@
 
 2019.02.17、2019.02.23
 項目3：キャストにはisまたはasを使用すること
+
+2019.02.23
+項目4：string.Format()を補完文字列に置き換える
+（コメント）
+	・Console.WriteLine($"円周率の値は{(round ? Math.PI.ToString() : Math.PI.ToString("F2"))}");
+	において、リテラル文字列指定$@"は不要
+
