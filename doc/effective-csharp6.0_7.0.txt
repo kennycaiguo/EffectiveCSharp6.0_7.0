@@ -34,3 +34,6 @@
 	・コード例のstring.Fromat(null,・・・)はランタイムエラーとなる。代わりに、
 	　src.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-de"))
 	とした
+	
+2019.02.23
+項目6：文字列指定のAPIを指定しないこと
