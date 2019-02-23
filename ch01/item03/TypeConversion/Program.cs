@@ -68,6 +68,25 @@ namespace TypeConversion
                 Console.WriteLine("o is not casted to MyType through SecondType");
             }
 
+            // DoStuffWithObject
+            DoStuffWithObject(o);
+
+            // compile error
+            //MyType t2 = st as MyType;
+        }
+
+        private static void DoStuffWithObject(object o)
+        {
+            try
+            {
+                MyType t;
+                t = (MyType)o;
+                Console.WriteLine("o is casted to MyType in DoStuffWithObject(o)");
+            }
+            catch (InvalidCastException)
+            {
+                Console.WriteLine("o is not casted to MyType in DoStuffWithObject(o)");
+            }
         }
     }
 }
