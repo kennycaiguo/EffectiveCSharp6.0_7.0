@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringInterpolation", "StringInterpolation\StringInterpolation.csproj", "{45C40E13-16AE-4771-95BC-66A5E368454F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterpolatedExpression", "InterpolatedExpression\InterpolatedExpression.csproj", "{DDB62921-F816-44C4-879B-4EA0B761457F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{45C40E13-16AE-4771-95BC-66A5E368454F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45C40E13-16AE-4771-95BC-66A5E368454F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45C40E13-16AE-4771-95BC-66A5E368454F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB62921-F816-44C4-879B-4EA0B761457F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB62921-F816-44C4-879B-4EA0B761457F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB62921-F816-44C4-879B-4EA0B761457F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB62921-F816-44C4-879B-4EA0B761457F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
