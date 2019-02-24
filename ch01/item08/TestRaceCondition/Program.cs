@@ -33,8 +33,8 @@ namespace TestRaceCondition
     public class ClientThread
     {
         private const int SET_CLEAR_COUNT = 500;
-        private const int LOOP_COUNT = 100;
-        private const int sleep_ms = 100;
+        private const int LOOP_COUNT = 1000;
+        private const int sleep_ms = 10;
 
         private EventSource eventSource;
         public int LastCounter { get; set; }
@@ -68,9 +68,9 @@ namespace TestRaceCondition
 
     class Program
     {
-        private const int LOOP_COUNT = 100;
+        private const int LOOP_COUNT = 1000;
         private const int RAISE_COUNT = 500;
-        private const int sleep_ms = 100;
+        private const int sleep_ms = 10;
 
         static void Main(string[] args)
         {
