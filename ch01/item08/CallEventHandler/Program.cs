@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CallEventHandler
+{
+    public class EventSource
+    {
+        private EventHandler<int> Updated;
+        public void AddHandler(EventHandler<int> h)
+        {
+            Updated += h;
+        }
+        public void ClearHandler()
+        {
+            Updated = null;
+        }
+        public void RaiseUpdates()
+        {
+            counter++;
+            Updated(this, counter);
+        }
+
+        private int counter;
+    }
+    class Program
+    {
+        static void Handler(Object sender, int param)
+        {
+            Console.WriteLine("Handler called: param=" + param);
+        }
+        static void Main(string[] args)
+        {
+            var source = new EventSource();
+            source.AddHandler(Handler);
+            source.RaiseUpdates();
+            source.ClearHandler();
+            source.RaiseUpdates();
+        }
+    }
+}
