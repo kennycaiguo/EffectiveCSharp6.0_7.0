@@ -9,9 +9,9 @@ namespace CheckNullHandler
     public class EventSource
     {
         private EventHandler<int> Updated;
-        public void AddHandler(EventHandler<int> h)
+        public void SetHandler(EventHandler<int> h)
         {
-            Updated += h;
+            Updated = h;
         }
         public void ClearHandler()
         {
@@ -37,7 +37,7 @@ namespace CheckNullHandler
         static void Main(string[] args)
         {
             var source = new EventSource();
-            source.AddHandler(Handler);
+            source.SetHandler(Handler);
             source.RaiseUpdates();
             source.ClearHandler();
             source.RaiseUpdates();
