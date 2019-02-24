@@ -38,6 +38,7 @@ namespace TestRaceCondition
 
         private EventSource eventSource;
         public int LastCounter { get; set; }
+        public bool StopRequest { get; set; }
 
         public ClientThread(EventSource es)
         {
@@ -53,6 +54,8 @@ namespace TestRaceCondition
         {
             for (int i = 0; i < LOOP_COUNT; ++i)
             {
+                if (StopRequest) break;
+
                 Thread.Sleep(sleep_ms);
                 for (int j = 0; j < SET_CLEAR_COUNT; ++j)
                 {
@@ -92,8 +95,10 @@ namespace TestRaceCondition
             catch (Exception e)
             {
                 Console.WriteLine("Execption occured: " + e);
+                client.StopRequest = true;
             }
             Console.WriteLine("LastCounter: " + client.LastCounter);
+            t.Join();
         }
     }
 }
