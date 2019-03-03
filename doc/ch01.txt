@@ -30,8 +30,14 @@
 2019.03.02、2019.03.03
 項目10：親クラスの変更に応じる場合のみnew修飾子を使用すること
 
-・2019.03.03：外部ライブラリBaseWidgetLibを使用する独自ライブラリMyWidgetLibを利用するクライアントMyWidgetClient
-(プロジェクト)　MyWidgetClient
-(参照)　MyWidgetLib、BaseWidgetLib
+・2019.03.03：外部ライブラリを利用する独自ライブラリが第3者に利用されている状況
+
+(概要)
+	・外部ライブラリBaseWidgetLibを使用して、独自ライブラリMyWidgetLibをリリース
+	・クライアントMyWidgetClientが独自ライブラリMyWidgetLibを利用
+(プロジェクト)
+	MyWidgetClient
+(参照)
+	MyWidgetLib、BaseWidgetLib
 
 
