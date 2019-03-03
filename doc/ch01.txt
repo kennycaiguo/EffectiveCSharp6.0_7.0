@@ -36,21 +36,21 @@
 	・外部ライブラリBaseWidgetLibを使用して、独自ライブラリMyWidgetLibをリリース
 	・クライアントMyWidgetClientが独自ライブラリMyWidgetLibを利用
 (プロジェクト)
-	MyWidgetClient
+	MyWidgetClient：第3者のクライアントアプリ
 (参照)
-	MyWidgetLib、BaseWidgetLib
+	BaseWidgetLib：外部ライブラリ
+	MyWidgetLib：外部ライブラリの親クラスをサブクラス化する独自ライブラリ
 
 ・2019.03.03：外部ライブラリの親クラスの新しいメソッド名が独自ライブラリの元々のメソッド名と重複
 
 (概要)
-	・外部ライブラリBaseWidgetLibを使用して、独自ライブラリMyWidgetLibをリリース
-	・クライアントMyWidgetClientが独自ライブラリMyWidgetLibを利用
 	・独自ライブラリの元々のメソッド名NormalizeValuesが外部ライブラリの親クラスの
-	新しいメソッド名と重複
+	新しいメソッド名と重複したため、new修飾子を指定
 (プロジェクト)
-	NewMyWidgetClient
+	NewMyWidgetClient：第3者のクライアントアプリ。内容は変更なし
 (参照)
-	NewMyWidgetLib、NewBaseWidgetLib
+	NewBaseWidgetLib：外部ライブラリ。親クラスにサブクラスと重複する新しいメソッドが追加
+	NewMyWidgetLib：独自ライブラリ。親クラスと重複するメソッドにnew修飾子を指定
 
 
 
