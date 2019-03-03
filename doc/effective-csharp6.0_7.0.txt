@@ -1,8 +1,22 @@
 (ドキュメント)
 
-	・VisualStudioとGitHubを連携させてみた
-	https://qiita.com/elu_jaune/items/eb354558d0dc39add152
+・VisualStudioとGitHubを連携させてみた
+https://qiita.com/elu_jaune/items/eb354558d0dc39add152
 	
+
+(トラブルシュート)
+
+・VC2017でVC++プロジェクトを作成する
+	
+	環境変数に以下を設定する
+
+	INCLUDE：
+		C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\SDK\ScopeCppSDK\VC\include
+		C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\SDK\ScopeCppSDK\SDK\include
+	LIB：
+		C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\SDK\ScopeCppSDK\SDK\lib
+	C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\SDK\ScopeCppSDK\VC\lib
+
 (進捗)
 
 第1章：C#言語イディオム
@@ -51,3 +65,9 @@
 
 2019.03.02、2019.03.03
 項目10：親クラスの変更に応じる場合のみnew修飾子を使用すること
+
+
+第２章：リソース管理
+
+2019.03.03
+項目11：.NETリソース管理を理解する
