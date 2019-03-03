@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMyWidgetLib", "NewMyWidg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewMyWidgetClient", "NewMyWidgetClient\NewMyWidgetClient.csproj", "{C1BF302E-1399-4E60-A869-6E84125B2372}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdatedMyWidgetLib", "UpdatedMyWidgetLib\UpdatedMyWidgetLib.csproj", "{830684B6-FC84-4EAE-B181-1C423254D34A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdatedMyWidgetClient", "UpdatedMyWidgetClient\UpdatedMyWidgetClient.csproj", "{867923BD-F66B-4E3F-BE47-F377B06B4004}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{C1BF302E-1399-4E60-A869-6E84125B2372}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1BF302E-1399-4E60-A869-6E84125B2372}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1BF302E-1399-4E60-A869-6E84125B2372}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830684B6-FC84-4EAE-B181-1C423254D34A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830684B6-FC84-4EAE-B181-1C423254D34A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830684B6-FC84-4EAE-B181-1C423254D34A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830684B6-FC84-4EAE-B181-1C423254D34A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{867923BD-F66B-4E3F-BE47-F377B06B4004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{867923BD-F66B-4E3F-BE47-F377B06B4004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{867923BD-F66B-4E3F-BE47-F377B06B4004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{867923BD-F66B-4E3F-BE47-F377B06B4004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
