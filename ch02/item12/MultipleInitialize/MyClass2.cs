@@ -22,4 +22,23 @@ namespace MultipleInitialize
             labels = new List<string>(size);
         }
     }
+
+    public class MyClass2_internal
+    {
+        // コレクションを宣言(初期化なし)
+        private List<string> labels;
+
+        public List<string> Labels { get { return labels; } }
+
+        public MyClass2_internal()
+        {
+            labels = new List<string>();
+        }
+
+        public MyClass2_internal(int size)
+        {
+            labels = new List<string>();
+            labels = new List<string>(size);
+        }
+    }
 }
