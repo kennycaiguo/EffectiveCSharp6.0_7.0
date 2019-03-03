@@ -40,4 +40,16 @@
 (参照)
 	MyWidgetLib、BaseWidgetLib
 
+・2019.03.03：外部ライブラリの新しいメソッド名が独自ライブラリの元々のメソッド名と重複
+
+(概要)
+	・外部ライブラリBaseWidgetLibを使用して、独自ライブラリMyWidgetLibをリリース
+	・クライアントMyWidgetClientが独自ライブラリNewMyWidgetLibを利用
+	・独理ライブラリの元々のメソッド名NormalizeValuesが外部ライブラリの新しいメソッド名と重複
+(プロジェクト)
+	NewMyWidgetClient
+(参照)
+	NewMyWidgetLib、NewBaseWidgetLib
+
+
 
