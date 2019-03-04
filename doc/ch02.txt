@@ -112,3 +112,9 @@
 (プロジェクト)
 	DisposableLocalVariable：Windowsフォームに時刻を描画する
 
+・2019.03.04：IDisposableなローカル変数をメンバ変数に変更（Windows　Formアプリ）
+(概要)
+	・Fontオブジェクトをメンバ変数として保持。OnPaintハンドラで同Fontオブジェクトを使いまわす
+(プロジェクト)
+	DisposableMemberVariable：Windowsフォームに時刻を描画する
+
