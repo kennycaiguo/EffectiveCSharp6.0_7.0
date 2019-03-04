@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualCall_in_Construcotor", "VirtualCall_in_Construcotor\VirtualCall_in_Construcotor.csproj", "{7166E82A-1A2B-415C-9CF1-2D73F89D8346}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualCall_in_Constructor", "VirtualCall_in_Constructor\VirtualCall_in_Constructor.csproj", "{7166E82A-1A2B-415C-9CF1-2D73F89D8346}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualCall_in_Constructor_cpp", "VirtualCall_in_Constructor_cpp\VirtualCall_in_Constructor_cpp.vcxproj", "{1D86CF68-8C43-4F7F-B8C5-C05F7E4A271E}"
 EndProject
