@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableLocalVariable", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableMemberVariable", "DisposableMemberVariable\DisposableMemberVariable.csproj", "{6B8719A5-4435-4DB4-A0CF-2436ED36CA66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableObject", "ImmutableObject\ImmutableObject.csproj", "{EB04FABB-C787-4900-8644-118BFFB5BD55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6B8719A5-4435-4DB4-A0CF-2436ED36CA66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B8719A5-4435-4DB4-A0CF-2436ED36CA66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B8719A5-4435-4DB4-A0CF-2436ED36CA66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB04FABB-C787-4900-8644-118BFFB5BD55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB04FABB-C787-4900-8644-118BFFB5BD55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB04FABB-C787-4900-8644-118BFFB5BD55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB04FABB-C787-4900-8644-118BFFB5BD55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
