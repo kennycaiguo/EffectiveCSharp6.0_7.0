@@ -102,3 +102,13 @@
 (プロジェクト)
 	InitializeReadOnlyMember：オーバーロードされた各種コンストラクタにより変数を初期化し、内容を確認
 
+
+2019.03.04
+項目15：不必要なオブジェクトの生成を避けること
+
+・2019.03.04：IDisposableなローカル変数の使用（Windows　Formアプリ）
+(概要)
+	・OnPaintハンドラで毎回同じFontオブジェクトを作成してテキストを描画する
+(プロジェクト)
+	DisposableLocalVariable：Windowsフォームに時刻を描画する
+
