@@ -12,6 +12,8 @@ namespace Singleton
         {
             var singleton1 = MySingleton.TheOnly;
             var singleton2 = MySingleton.TheOnly;
+
+            Console.WriteLine($"singleton1.Equals(singleton2) ? {singleton1.Equals(singleton2)}");
         }
     }
 }
