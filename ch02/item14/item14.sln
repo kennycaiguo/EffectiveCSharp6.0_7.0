@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConstructorDefaultArgument"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonInitializerMethod", "CommonInitializerMethod\CommonInitializerMethod.csproj", "{D9C25A15-9CA7-4ED2-B5D2-1CE888F8A115}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InitializeReadOnlyMember", "InitializeReadOnlyMember\InitializeReadOnlyMember.csproj", "{7B7D0206-E6DA-47E6-8849-4470EC49A69A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D9C25A15-9CA7-4ED2-B5D2-1CE888F8A115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9C25A15-9CA7-4ED2-B5D2-1CE888F8A115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9C25A15-9CA7-4ED2-B5D2-1CE888F8A115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B7D0206-E6DA-47E6-8849-4470EC49A69A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B7D0206-E6DA-47E6-8849-4470EC49A69A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B7D0206-E6DA-47E6-8849-4470EC49A69A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B7D0206-E6DA-47E6-8849-4470EC49A69A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
