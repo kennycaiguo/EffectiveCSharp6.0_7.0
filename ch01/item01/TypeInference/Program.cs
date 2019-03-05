@@ -6,21 +6,6 @@ using System.Threading.Tasks;
 
 namespace TypeInference
 {
-    class MyType
-    {
-
-    }
-    class Account
-    {
-
-    }
-    class AccountFactory
-    {
-        public static Account CreateSavingsAccount()
-        {
-            return new Account();
-        }
-    }
     class Program
     {
         static void Main(string[] args)
