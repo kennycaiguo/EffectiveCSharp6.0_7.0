@@ -167,3 +167,12 @@
 (プロジェクト)
 	DisposableClassTree：IDisposableなクラス階層の構築とDispose
 
+・2019.03.05：Disposableなクラス階層をファイナライズする
+(概要)
+	・IDisposableなクラス階層を実装する
+	・子クラスと親クラスのそれぞれについてファイナライザを行う
+(プロジェクト)
+	FinalizeDisposableTree：IDisposableなクラス階層の構築とファイナライズ
+(コメント)
+	派生クラスのファイナライズの実行中に、その中に含まれる親クラスのファイナライザもコールされている
+
