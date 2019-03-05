@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableClassTree", "Disp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinalizeDisposableTree", "FinalizeDisposableTree\FinalizeDisposableTree.csproj", "{1EB984C1-5B97-4618-8CFC-1C8E59B85E9A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposeNestedDisposable", "DisposeNestedDisposable\DisposeNestedDisposable.csproj", "{DCF24F82-437D-4816-94FC-EDDF3BA51E9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1EB984C1-5B97-4618-8CFC-1C8E59B85E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EB984C1-5B97-4618-8CFC-1C8E59B85E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EB984C1-5B97-4618-8CFC-1C8E59B85E9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF24F82-437D-4816-94FC-EDDF3BA51E9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF24F82-437D-4816-94FC-EDDF3BA51E9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF24F82-437D-4816-94FC-EDDF3BA51E9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF24F82-437D-4816-94FC-EDDF3BA51E9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
