@@ -176,3 +176,9 @@
 (コメント)
 	派生クラスのファイナライズの実行中に、その中に含まれる親クラスのファイナライザもコールされている
 
+・2019.03.05：ネストしてDisposableをDisposeする
+(概要)
+	・ネストしたIDisposableなクラスを実装する
+	・子クラスと親クラスのそれぞれについてDisposeする
+(プロジェクト)
+	DisposeNestedDisposable：ネストしたIDisposableをDisposeするテスト
