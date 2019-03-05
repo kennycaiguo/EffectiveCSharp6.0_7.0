@@ -17,6 +17,15 @@ namespace DisposableClassTree
             }
         }
 
+        static void DisposeDerivedClass()
+        {
+            Console.WriteLine("DisposeDerivedClass():");
+            using (var o = new DerivedResourceHog())
+            {
+
+            }
+        }
+
         static void UseClassAfterDisposed()
         {
             Console.WriteLine("UseClassAfterDisposed():");
@@ -35,6 +44,7 @@ namespace DisposableClassTree
         static void Main(string[] args)
         {
             DisposeBaseClass();
+            DisposeDerivedClass();
             UseClassAfterDisposed();
         }
     }

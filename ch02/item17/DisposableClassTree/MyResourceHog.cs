@@ -29,10 +29,10 @@ namespace DisposableClassTree
             if (isDisposing)
             {
                 // この位置でマネージリソースを開放する
-                Console.WriteLine("release managed resource of MyResourceHog");
+                Console.WriteLine("releasing managed resource of MyResourceHog");
             }
             // この位置で非マネージリソースを開放する
-            Console.WriteLine("release non-managed resource of MyResourceHog");
+            Console.WriteLine("releasing non-managed resource of MyResourceHog");
 
             // 破棄済みのフラグを設定
             alreadyDisposed = true;
