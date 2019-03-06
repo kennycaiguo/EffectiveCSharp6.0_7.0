@@ -25,6 +25,24 @@
 (プロジェクト)
 	ConstReadonly：
 
+・2019.03.06：const定数とreadonly変数を含むアセンブリをバージョンアップした場合の動作
+(概要)
+	・アプリケーションから外部アセンブリに含まれるconst定数とreadonly変数をアクセスする
+	・外部アセンブリをバージョンアップし、dllをリリースした場合の動作の違いを試す
+(プロジェクト)
+	Application：外部アセンブリを参照するアプリケーション
+	Infrastructure：const定数とreadonly変数を含む外部アセンブリ
+(コメント)
+	・VC2017でこの動作を試すためには以下の手順に従う必要がある
+	①InfrastuctureとAppicationを作成・ビルドし、動作確認を行う。この時、Applicationの
+		参照プロジェクトにInfrastuctureを加える
+	②Infrastrureをバージョンアップ、ビルドし、dllを作成する
+	③ビルド後、作成されたdllファイルをAppicationのbin/Debugフォルダにコピーする
+	④コマンドラインからApplicationを実行する
+		この時、VC2017からからAppicationを実行すると、Applicationが再ビルドされるため、
+		目的の動作確認ができない
+		
+
 2019.02.17、2019.02.23
 項目3：キャストにはisまたはasを使用すること
 
