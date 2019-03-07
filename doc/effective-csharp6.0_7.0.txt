@@ -37,18 +37,12 @@ https://qiita.com/elu_jaune/items/eb354558d0dc39add152
 	
 2019.02.23、2019.03.07
 項目5：カルチャ固有の文字列よりもFormattableStringを使用すること
-(コメント)
-	・コード例のstring.Fromat(null,・・・)はランタイムエラーとなる。代わりに、
-	　src.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-de"))
-	とした
 	
 2019.02.23、2019.03.07
 項目6：文字列指定のAPIを指定しないこと
 
-2019.02.24
+2019.02.24、2019.03.07
 項目7：デリゲートを使用してコールバックを表現する
-(コメント)
-	・テキストの記述と異なり、List<int>.Find()は、マッチした最初の要素(int)を返す
 
 2019.02.24
 項目8：イベントの呼び出し時にnull条件演算子を使用すること
