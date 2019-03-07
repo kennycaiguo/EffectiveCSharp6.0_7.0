@@ -18,8 +18,8 @@ namespace ListCallback
             numbers.RemoveAll(n => n % 2 == 0);
             numbers.ForEach(item => Console.WriteLine(item));
 
-            Console.WriteLine("oddNumbers: " + oddNumbers);
-            Console.WriteLine("test: " + test);
+            Console.WriteLine($"oddNumbers: {oddNumbers}");
+            Console.WriteLine($"test: {test}");
         }
     }
 }
