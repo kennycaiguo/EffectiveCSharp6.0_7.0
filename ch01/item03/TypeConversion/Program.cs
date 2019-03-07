@@ -6,65 +6,54 @@ using System.Threading.Tasks;
 
 namespace TypeConversion
 {
-    class MyType
-    {
-
-    }
-    class SecondType
-    {
-        private MyType _value;
-        public static implicit operator
-            MyType(SecondType t)
-        {
-            return t._value;
-        }
-    }
-    class Factory
-    {
-        public static object GetObject()
-        {
-            return new SecondType();
-        }
-    }
     class Program
     {
         static void Main(string[] args)
         {
             object o = Factory.GetObject();
 
-            // version 1
-            MyType t = o as MyType;
+            // バージョン 1：
+            //　oはSecondType型：
+            MyType t = o as MyType;　//　失敗。oはMyTypeではない
             if (t != null)
             {
+                // MyType型の変数tを使った作業
                 Console.WriteLine("o is MyType");
             }
             else
             {
+                //　処理の失敗を通知
                 Console.WriteLine("o is not MyType");
             }
 
-            // version 2
+            // バージョン 2：
             try
             {
                 MyType t1;
-                t1 = (MyType)o;
+                t1 = (MyType)o; //　失敗。oはSecondTypeではない
+
+                //　MyType型の変数tを使った作業
                 Console.WriteLine("o is casted to MyType");
             }
             catch (InvalidCastException)
             {
+                //　処理の失敗を通知
                 Console.WriteLine("o is not casted to MyType");
             }
 
-            // version 3
+            // バージョン 3：
             SecondType st = o as SecondType;
             try
             {
                 MyType t1;
                 t1 = (MyType)st;
+
+                //　MyType型の変数tを使った作業
                 Console.WriteLine("o is casted to MyType through SecondType");
             }
             catch (InvalidCastException)
             {
+                //　処理の失敗を通知する
                 Console.WriteLine("o is not casted to MyType through SecondType");
             }
 
@@ -80,11 +69,14 @@ namespace TypeConversion
             try
             {
                 MyType t;
-                t = (MyType)o;
+                t = (MyType)o;  //　oはMyType型ではないので失敗する
+
+                //　MyType型の変数tを使った作業
                 Console.WriteLine("o is casted to MyType in DoStuffWithObject(o)");
             }
             catch (InvalidCastException)
             {
+                //　処理の失敗を通知する
                 Console.WriteLine("o is not casted to MyType in DoStuffWithObject(o)");
             }
         }
