@@ -9,26 +9,6 @@ using System.ComponentModel;
 
 namespace PropertyChanged
 {
-    public class Person
-    {
-        public string Name
-        {
-            get { return name; }
-            set
-            {
-                if (value != name)
-                {
-                    name = value;
-                    PropertyChanged?.Invoke(this,
-                        new PropertyChangedEventArgs(nameof(Name)));
-                }
-            }
-        }
-        private string name;
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-    }
     class Program
     {
         static void Main(string[] args)
@@ -44,10 +24,11 @@ namespace PropertyChanged
             if (e.PropertyName != "Name") return;
 
             // そしてキャスト
-            var p = (Person)sender;
+            //var p = (Person)sender;
+            var p = sender as Person;
 
             // 各々の処理
-            Console.WriteLine("名前が変更されました: " + p.Name);
+            Console.WriteLine($"名前が変更されました: {p.Name}");
         }
     }
 }
