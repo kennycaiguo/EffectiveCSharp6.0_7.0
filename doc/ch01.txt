@@ -93,6 +93,12 @@
 (プロジェクト)
 	ForeachIEnumerable：
 
+・2019.03.07：EnumerableCast<T>
+(概要)
+	・IEnumberシーケンスに対して、Enumerable.Cast<T>を使用して目的の型のシーケンスに変換する
+(プロジェクト)
+	EnumerableCast：
+
 
 2019.02.23
 項目4：string.Format()を補完文字列に置き換える
