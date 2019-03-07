@@ -120,8 +120,20 @@
 （コメント）
 	・補完文字列途中で改行する方法が不明
 
-2019.02.23
+2019.02.23、2019.03.07
 項目5：カルチャ固有の文字列よりもFormattableStringを使用すること
+
+・2019.03.07：FormatableStringの利用法
+(概要)
+	・補完文字列は出力先に応じてstringまたはFormatableString型となる
+	　（オーバーロードなど、複数選択があるときはstring優先）
+	・FormatableStringにローカライズ情報を設定する方法
+(プロジェクト)
+	FormatString
+(コメント)
+	・コード例のstring.Fromat(null,・・・)はランタイムエラーとなる。代わりに、
+	　src.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-de"))
+	とした
 	
 2019.02.23
 項目6：文字列指定のAPIを指定しないこと
