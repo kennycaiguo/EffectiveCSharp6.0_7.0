@@ -85,6 +85,15 @@
 (プロジェクト)
 	AsInt：
 
+・2019.03.07：IEnumerableを使用したforeachの型変換
+(概要)
+	・IEnumberシーケンスに対して、foreachを使用すると、範囲変数の型にキャスト演算子を使用して
+	　型変換を行う。
+	・オブジェクト型MyTypeと組み込み型intを要素とするIEnumerableに対して、foreachの動作を確認する
+(プロジェクト)
+	ForeachIEnumerable：
+
+
 2019.02.23
 項目4：string.Format()を補完文字列に置き換える
 	
