@@ -42,7 +42,7 @@ https://qiita.com/elu_jaune/items/eb354558d0dc39add152
 	　src.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-de"))
 	とした
 	
-2019.02.23
+2019.02.23、2019.03.07
 項目6：文字列指定のAPIを指定しないこと
 
 2019.02.24

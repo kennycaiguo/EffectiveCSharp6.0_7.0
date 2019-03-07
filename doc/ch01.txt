@@ -135,8 +135,16 @@
 	　src.ToString(System.Globalization.CultureInfo.CreateSpecificCulture("de-de"))
 	とした
 	
-2019.02.23
+2019.02.23、2019.03.07
 項目6：文字列指定のAPIを指定しないこと
+
+・2019.03.07：PropertyChangedEventHandlerでnameof演算子の使用法
+(概要)
+	・PropertyChangedEventHandlerで、変更されたプロパティー名をnameof演算子を使って
+	　PropertyChangedEventArgsの引数に設定する
+(プロジェクト)
+	PropertyChagned
+
 
 2019.02.24
 項目7：デリゲートを使用してコールバックを表現する
