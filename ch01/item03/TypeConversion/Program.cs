@@ -62,6 +62,9 @@ namespace TypeConversion
 
             // compile error
             //MyType t2 = st as MyType;
+            // 参照の変換、ボックス変換、アンボックス変換、折り返しの変換、または null 型の変換で、
+            // 型 'TypeConversion.SecondType' を 'TypeConversion.MyType' に変換できません。	
+
         }
 
         private static void DoStuffWithObject(object o)
