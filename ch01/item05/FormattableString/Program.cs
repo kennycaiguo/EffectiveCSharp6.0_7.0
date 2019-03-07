@@ -29,15 +29,15 @@ namespace FormatString
         {
             String first =
                 $"今日は{DateTime.Now.Month}月{DateTime.Now.Day}日です";
-            Console.WriteLine(first);
+            Console.WriteLine($"{first.GetType().Name}:{first}");
 
             FormattableString second =
                 $"今日は{DateTime.Now.Month}月{DateTime.Now.Day}日です";
-            Console.WriteLine(second);
+            Console.WriteLine($"{second.GetType().Name}:{second}");
 
             var third =
                 $"今日は{DateTime.Now.Month}月{DateTime.Now.Day}日です";
-            Console.WriteLine(third);
+            Console.WriteLine($"{third.GetType().Name}:{third}");
 
             var num = $"{123.45}";
             FormattableString formattable = $"{123.45}";
