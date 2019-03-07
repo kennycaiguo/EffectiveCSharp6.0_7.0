@@ -100,9 +100,20 @@
 	EnumerableCast：
 
 
-2019.02.23
+2019.02.23、2019.03.27
 項目4：string.Format()を補完文字列に置き換える
-	
+
+・2019.03.07：文字列補完
+(概要)
+	・文字列補完の文法と使い方
+(プロジェクト)
+	StringInterpolation：
+（コメント）
+	・Console.WriteLine($"円周率の値は{(round ? Math.PI.ToString() : Math.PI.ToString("F2"))}");
+	において、リテラル文字列指定$@"は不要
+	・補完文字列途中で改行する方法が不明
+
+
 2019.02.23
 項目5：カルチャ固有の文字列よりもFormattableStringを使用すること
 	
