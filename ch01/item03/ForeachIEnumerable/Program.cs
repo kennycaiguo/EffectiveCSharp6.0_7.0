@@ -9,35 +9,6 @@ using System.Collections;
 
 namespace ForeachIEnumerable
 {
-    class MyType
-    {
-        private int value;
-        public MyType(int v)
-        {
-            this.value = v;
-        }
-        public void DoStuff()
-        {
-            Console.WriteLine("MyType.DoStuff() : value=" + value);
-        }
-    }
-
-    class SecondType
-    {
-        private MyType _value;
-
-        public SecondType(MyType v)
-        {
-            _value = v;
-        }
-
-        public static implicit operator
-            MyType(SecondType t)
-        {
-            return t._value;
-        }
-    }
-
     class Program
     {
         public void UseCollection(IEnumerable theCollection)
@@ -76,9 +47,9 @@ namespace ForeachIEnumerable
         {
             Program prog = new Program();
 
-            IEnumerable collection = new List<MyType>() { new MyType(1), new MyType(2) };
-            prog.UseCollection(collection);
-            prog.UseCollectionV2(collection);
+            IEnumerable myTypes = new List<MyType>() { new MyType(1), new MyType(2) };
+            prog.UseCollection(myTypes);
+            prog.UseCollectionV2(myTypes);
 
             IEnumerable ints = new List<int>() { 101, 102, 103 };
             prog.UseCollection_int(ints);
@@ -93,8 +64,12 @@ namespace ForeachIEnumerable
             }
             catch (InvalidCastException e)
             {
-                Console.WriteLine("InvalidCastException: " + e);
+                Console.WriteLine(e);
             }
+
+            IEnumerable newTypes = new List<NewType>() { new NewType(3), new NewType(4) };
+            prog.UseCollection(newTypes);
+            prog.UseCollectionV2(newTypes);
         }
     }
 }
