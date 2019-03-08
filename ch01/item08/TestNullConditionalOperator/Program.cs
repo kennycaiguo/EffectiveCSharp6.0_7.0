@@ -9,62 +9,6 @@ using System.Threading;
 
 namespace TestNullConditionalOperator
 {
-    public class EventSource
-    {
-        private EventHandler<int> Updated;
-        public void SetHandler(EventHandler<int> h)
-        {
-            Updated = h;
-        }
-        public void ClearHandler()
-        {
-            Updated = null;
-        }
-        public void RaiseUpdates()
-        {
-            counter++;
-            Updated?.Invoke(this, counter);
-        }
-
-        private int counter;
-    }
-
-    public class ClientThread
-    {
-        private const int SET_CLEAR_COUNT = 500;
-        private const int LOOP_COUNT = 1000;
-        private const int sleep_ms = 10;
-
-        private EventSource eventSource;
-        public int LastCounter { get; set; }
-        public bool StopRequest { get; set; }
-
-        public ClientThread(EventSource es)
-        {
-            eventSource = es;
-        }
-
-        void Handler(Object sender, int param)
-        {
-            LastCounter = param;
-        }
-
-        public void exec()
-        {
-            for (int i = 0; i < LOOP_COUNT; ++i)
-            {
-                if (StopRequest) break;
-
-                Thread.Sleep(sleep_ms);
-                for (int j = 0; j < SET_CLEAR_COUNT; ++j)
-                {
-                    eventSource.ClearHandler();
-                    eventSource.SetHandler(Handler);
-                }
-            }
-        }
-    }
-
     class Program
     {
         private const int LOOP_COUNT = 1000;
@@ -93,10 +37,10 @@ namespace TestNullConditionalOperator
             }
             catch (Exception e)
             {
-                Console.WriteLine("Execption occured: " + e);
+                Console.WriteLine($"Execption occured: {e}");
                 client.StopRequest = true;
             }
-            Console.WriteLine("LastCounter: " + client.LastCounter);
+            Console.WriteLine($"LastCounter: {client.LastCounter}");
             t.Join();
         }
     }
