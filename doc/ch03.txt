@@ -1,0 +1,19 @@
+第3章：ジェネリックによる処理
+
+2019.03.09
+項目18：最低限必要になる制約を常に定義すること
+
+・2019.03.09：IComparable<T>制約による同値性の判定
+(概要)
+	・制約なしのジェネリックス関数で(AreEqual)、実行時テスト(IComparable)により同値性を判定する
+	・IComparable<T>制約をつけたジェネリックス関数で(AreEqual2)、同値値性を判定する
+(プロジェクト)
+	Constraint：同値性判定のテストプログラム
+	・比較対象のオブジェクトは、
+		IComparable<string>を実装する型として、string
+		IComparable<Point>を実装しない型として、独自のPointクラス
+		IComparable<OrderedPoint>とIComparable<Point>を実装する型として、Pointの派生クラスの
+		OrderedPointクラスを使用する
+(コメント)
+	・AreEqual関数で、第1引数を非null文字列、第2引数をnullとすると、ArgumentExceptionが発生する
+	・AreEqual2関数で、第1引数をnullとすると、NullReferenceExceptionが発生する

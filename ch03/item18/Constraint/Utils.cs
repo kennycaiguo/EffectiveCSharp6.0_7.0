@@ -29,5 +29,9 @@ namespace Constraint
                     nameof(left));
             }
         }
+
+        public static bool AreEqual2<T>(T left, T right)
+            where T : IComparable<T> =>
+                left.CompareTo(right) == 0;
     }
 }
