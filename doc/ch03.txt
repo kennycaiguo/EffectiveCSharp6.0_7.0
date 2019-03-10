@@ -35,4 +35,4 @@
 	・AreEqual関数で、第1引数がnullのとき、NullReferenceExceptionが発生する
 	・AreEqual関数（Object.Equals）で、値の等しい２つのPointStructを同値比較すると、Trueとなる
 	　これに対して、値の等しい２つのPointClassを同値比較すると、Falseとなる
-	　（構造体に対しては、Object.Equalsがオーバーライドされていると思われる）
+	　（値型に対しては、Object.Equalsがオーバーライドされていると思われる）
