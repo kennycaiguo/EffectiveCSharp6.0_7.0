@@ -63,3 +63,15 @@
 		・intのシーケンスをIEnumerableにキャストしたもの
 		・intのリスト：List<int>
 		・intのリストをIEnumerable<int>にキャストしたもの
+
+・2019.03.10：走査対象のシーケンスが提供する機能に応じて特化する
+(概要)
+	・走査対象シーケンスの実行時の型を動的に調べて、シーケンスが提供する機能に応じて
+	　特化した実装を提供する
+(プロジェクト)
+	GerericAlgorithm：テストプログラム。走査対象のシーケンスとして
+		・intのシーケンス：IEnumerable<int>（Enumerable.Range()により生成）
+		・intのシーケンスをIEnumerableにキャストしたもの
+		・intのリスト：List<int>
+		・intのリストをIEnumerable<int>にキャストしたもの
+		・stringキー、int値の辞書：Dictionary<strig,int>（ICollectionインターフェースを実装する）
