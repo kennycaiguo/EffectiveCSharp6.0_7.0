@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericAlgorithm", "GenericAlgorithm\GenericAlgorithm.csproj", "{BEC62BF0-B361-4CA0-9EF3-ADD40505D450}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecializeGeneric", "SpecializeGeneric\SpecializeGeneric.csproj", "{666838F4-93FD-42C9-9F23-F8E32929C20F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BEC62BF0-B361-4CA0-9EF3-ADD40505D450}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BEC62BF0-B361-4CA0-9EF3-ADD40505D450}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BEC62BF0-B361-4CA0-9EF3-ADD40505D450}.Release|Any CPU.Build.0 = Release|Any CPU
+		{666838F4-93FD-42C9-9F23-F8E32929C20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{666838F4-93FD-42C9-9F23-F8E32929C20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{666838F4-93FD-42C9-9F23-F8E32929C20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{666838F4-93FD-42C9-9F23-F8E32929C20F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
