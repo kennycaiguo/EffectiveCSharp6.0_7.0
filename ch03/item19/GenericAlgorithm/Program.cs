@@ -41,10 +41,21 @@ namespace GenericAlgorithm
                 Console.WriteLine(item);
         }
 
+        static void TestString()
+        {
+            Console.WriteLine("TestString() - char sequence:");
+            string s = "abcde";
+
+            var reverseSequence = new ReverseEnumerable<char>(s);
+            foreach (var item in reverseSequence)
+                Console.WriteLine(item);
+        }
+
         static void Main(string[] args)
         {
             TestIntSequence();
             TestIntList();
+            TestString();
         }
     }
 }
