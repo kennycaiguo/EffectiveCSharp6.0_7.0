@@ -17,3 +17,21 @@
 (コメント)
 	・AreEqual関数で、第1引数を非null文字列、第2引数をnullとすると、ArgumentExceptionが発生する
 	・AreEqual2関数で、第1引数をnullとすると、NullReferenceExceptionが発生する
+
+
+・2019.03.10：IEquatable<T>の動的テストによる内部オーバーロード
+(概要)
+	・制約なしのジェネリックス関数で(AreEqual)、実行時テスト(IComparable)により同値性を判定する
+	・IComparable<T>制約をつけたジェネリックス関数で(AreEqual2)、同値値性を判定する
+(プロジェクト)
+	Constraint：同値性判定のテストプログラム
+	・比較対象のオブジェクトは、
+		IComparable<string>を実装する型として、string
+		IComparable<Point>を実装しない型として、独自のPointクラス
+		IComparable<OrderedPoint>とIComparable<Point>を実装する型として、Pointの派生クラスの
+		OrderedPointクラスを使用する
+（コメント）
+	・AreEqual関数で、第1引数がnullのとき、NullReferenceExceptionが発生する
+	・AreEqual関数（Object.Equals）で、値の等しい２つのPointStructを同値比較すると、Trueとなる
+	　これに対して、値の等しい２つのPointClassを同値比較すると、Falseとなる
+	　（構造体に対しては、Object.Equalsがオーバーライドされていると思われる）
