@@ -76,3 +76,4 @@
 		・intのリスト：List<int>
 		・intのリストをIEnumerable<int>にキャストしたもの
 		・stringキー、int値の辞書：Dictionary<strig,int>（ICollectionインターフェースを実装する）
+		・文字のシーケンスとしてstring
