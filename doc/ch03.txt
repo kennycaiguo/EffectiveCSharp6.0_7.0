@@ -1,6 +1,6 @@
 第3章：ジェネリックによる処理
 
-2019.03.09
+2019.03.09、2019.03.10
 項目18：最低限必要になる制約を常に定義すること
 
 ・2019.03.09：IComparable<T>制約による同値性の判定
@@ -21,15 +21,16 @@
 
 ・2019.03.10：IEquatable<T>の動的テストによる内部オーバーロード
 (概要)
-	・制約なしのジェネリックス関数で(AreEqual)、実行時テスト(IComparable)により同値性を判定する
-	・IComparable<T>制約をつけたジェネリックス関数で(AreEqual2)、同値値性を判定する
+	・Object.Equalsを使用した同値性判定(AreEqual)
+	・IEquatable<T>の動的テストによる、内部オーバーロード(AreEqual2)
 (プロジェクト)
-	Constraint：同値性判定のテストプログラム
-	・比較対象のオブジェクトは、
-		IComparable<string>を実装する型として、string
-		IComparable<Point>を実装しない型として、独自のPointクラス
-		IComparable<OrderedPoint>とIComparable<Point>を実装する型として、Pointの派生クラスの
-		OrderedPointクラスを使用する
+	InetrnalOverload：内部オーバーロードの同値性判定テストプログラム
+	・同値性判定対象のオブジェクトは、
+		IEquatable<string>を実装するクラスとして、string
+		IEquatable<PointStruct>を明示的には実装してない、PointStruct構造体
+		IEquatable<PointClass>を実装していない、PointClassクラス
+		IEquatable<EquatablePointClass>を実装している、EquatablePointClassクラス
+		を使用する
 （コメント）
 	・AreEqual関数で、第1引数がnullのとき、NullReferenceExceptionが発生する
 	・AreEqual関数（Object.Equals）で、値の等しい２つのPointStructを同値比較すると、Trueとなる
