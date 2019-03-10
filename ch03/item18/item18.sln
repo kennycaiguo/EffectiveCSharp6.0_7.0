@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Constraint", "Constraint\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternalOverload", "InternalOverload\InternalOverload.csproj", "{910AAB6C-AE5F-4FED-B833-B6E0888120B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Default", "Default\Default.csproj", "{647A9693-5481-408D-B9E8-FF61601729F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{910AAB6C-AE5F-4FED-B833-B6E0888120B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{910AAB6C-AE5F-4FED-B833-B6E0888120B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{910AAB6C-AE5F-4FED-B833-B6E0888120B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{647A9693-5481-408D-B9E8-FF61601729F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647A9693-5481-408D-B9E8-FF61601729F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647A9693-5481-408D-B9E8-FF61601729F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647A9693-5481-408D-B9E8-FF61601729F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
