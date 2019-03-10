@@ -49,3 +49,17 @@
 	・引数で与えられたファクトリ関数が非nullを返したらそれを返却。nullを返したらnew T()を返却
 (プロジェクト)
 	New：テストプログラム。型引数として、int、PointStruct構造体、PointClassをクラスを使用
+
+
+2019.03.10
+項目19：実行時の型チェックを使用してジェネリックアルゴリズムを特化する
+
+・2019.03.10：逆順に走査するシーケンス
+(概要)
+	・シーケンス(Enumerable)を引数に受けて、逆順に走査するシーケンスを生成する
+(プロジェクト)
+	GerericAlgorithm：テストプログラム。走査対象のシーケンスとして
+		・intのシーケンス：IEnumerable<int>（Enumerable.Range()により生成）
+		・intのシーケンスをIEnumerableにキャストしたもの
+		・intのリスト：List<int>
+		・intのリストをIEnumerable<int>にキャストしたもの
