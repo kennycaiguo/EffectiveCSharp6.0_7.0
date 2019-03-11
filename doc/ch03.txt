@@ -105,3 +105,10 @@
 		・自然な順序で、List<Customer>をソートする
 (コメント)
 	・明示的な実装IComparable.CompareToは、publicとすることはできない（コンパイルエラーとなる）
+
+・2019.03.11：関係演算子による大小比較
+(概要)
+	・自然な順序を反映した関係演算子を定義（CompareToメソッドを呼び出す)
+(プロジェクト)
+	RelationOperators：テストプログラム。
+		4つの大小比較演算子を、異なる２つのCusotomerと同値な２つのCustomerで呼び出す
