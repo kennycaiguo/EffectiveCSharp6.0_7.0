@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaturalOrder", "NaturalOrder\NaturalOrder.csproj", "{B6CF4055-8CC6-4696-9BB2-129EAE2DBC23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelationOperators", "RelationOperators\RelationOperators.csproj", "{B5B52993-8A7E-4BAF-971E-41684FC0B481}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B6CF4055-8CC6-4696-9BB2-129EAE2DBC23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6CF4055-8CC6-4696-9BB2-129EAE2DBC23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6CF4055-8CC6-4696-9BB2-129EAE2DBC23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5B52993-8A7E-4BAF-971E-41684FC0B481}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5B52993-8A7E-4BAF-971E-41684FC0B481}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5B52993-8A7E-4BAF-971E-41684FC0B481}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5B52993-8A7E-4BAF-971E-41684FC0B481}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
