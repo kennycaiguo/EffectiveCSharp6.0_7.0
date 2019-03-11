@@ -113,8 +113,19 @@
 	RelationOperators：テストプログラム。
 		4つの大小比較演算子を、異なる２つのCusotomerと同値な２つのCustomerで呼び出す
 
-・2019.03.11：Comparison<T>による自然な順序以外の大小比較の導入
+・2019.03.11：Comparison<T>デリゲートによる自然な順序以外の大小比較の導入
 (概要)
 	・収入によるComparison<T>デリゲートを実装し、List<Customer>をこの基準でソートする
 (プロジェクト)
 	CoparisonDelegate：テストプログラム。
+
+・2019.03.11：Comparer<T>インターフェースによる自然な順序以外の大小比較の導入
+(概要)
+	・収入による比較を行うRevenueComparerを、インターフェースComparer<Customer>を実装する
+	　内部クラスとして実装し、List<Customer>をこの基準でソートする
+	・また、この内部クラスのインスタンスを取得するための静的プロパティーRevenueCompareを
+	　用意する。
+	　この静的プロパティーは、Lazy<RevenueComparer>を使用することで、初めてプロパティ
+	　にアクセスしたときに、RevenueComparerを遅延生成する。
+(プロジェクト)
+	ComparerInterface：テストプログラム。
