@@ -90,3 +90,18 @@
 		・intのリストをIEnumerable<int>にキャストしたもの
 		・stringキー、int値の辞書：Dictionary<strig,int>（ICollectionインターフェースを実装する）
 		・文字のシーケンスとしてstring
+
+2019.03.11
+項目20：IComparable<T>とIComparableにより順序関係を実装する
+
+・2019.03.11：IComparable<T>とIComparableによる自然な順序付け
+(概要)
+	・IComparable<T>とIComparableを実装し、型に自然な順序を定義する
+	・IComparableは明示的に実装する
+(プロジェクト)
+	NatuaralOrder：テストプログラム。以下をテストする
+		・CompareToメソッドを使用して、２つのCustomerを比較する
+		・IComparable.CompareToを使用して、CustomerとEmployee（Customer以外のもの）を比較する
+		・自然な順序で、List<Customer>をソートする
+(コメント)
+	・明示的な実装IComparable.CompareToは、publicとすることはできない（コンパイルエラーとなる）
