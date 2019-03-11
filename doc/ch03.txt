@@ -112,3 +112,9 @@
 (プロジェクト)
 	RelationOperators：テストプログラム。
 		4つの大小比較演算子を、異なる２つのCusotomerと同値な２つのCustomerで呼び出す
+
+・2019.03.11：Comparison<T>による自然な順序以外の大小比較の導入
+(概要)
+	・収入によるComparison<T>デリゲートを実装し、List<Customer>をこの基準でソートする
+(プロジェクト)
+	CoparisonDelegate：テストプログラム。
