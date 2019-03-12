@@ -136,10 +136,17 @@
 
 ・2019.03.12：型引数のインスタンスをローカル変数として作成する
 (概要)
-	・ジェネリッククラスの型引数のインスタンスをローカル変数と作成する時、型引数がIDisposable
+	・ジェネリッククラスの型引数のインスタンスをローカル変数として作成する時、型引数がIDisposable
 	　を実装している場合には、Disposeを呼び出す必要がある
 (プロジェクト)
-	DisposableLocalVariable：テストプログラム
+	LocalDisposableVariable：テストプログラム（プロジェクト名をDisposableLocalVariableに変えたい）
 		・Disposeを呼び出さない問題のある実装をテスト
 		・usingとIDisposalへのキャストを組み合わせて、IDisposableを実装ていればDisposeを呼び出す
 		　実装のテスト
+
+・2019.03.12：型引数のインスタンスをフィールド変数として作成する
+(概要)
+	・ジェネリッククラスの型引数のインスタンスをフィールド変数として作成する時、
+	　ジェネリッククラス自体がIDisposabelを実装する必要がある
+(プロジェクト)
+	DisposableFieldVariable：テストプログラム
