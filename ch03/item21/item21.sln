@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalDisposableVariable", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableFieldVariable", "DisposableFieldVariable\DisposableFieldVariable.csproj", "{2F535353-1FE0-41F0-94BB-04957016EB82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WithoutOwnership", "WithoutOwnership\WithoutOwnership.csproj", "{E2B27FED-0F12-4DF7-8C53-5361D73D9520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2F535353-1FE0-41F0-94BB-04957016EB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F535353-1FE0-41F0-94BB-04957016EB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F535353-1FE0-41F0-94BB-04957016EB82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2B27FED-0F12-4DF7-8C53-5361D73D9520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2B27FED-0F12-4DF7-8C53-5361D73D9520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2B27FED-0F12-4DF7-8C53-5361D73D9520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2B27FED-0F12-4DF7-8C53-5361D73D9520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
