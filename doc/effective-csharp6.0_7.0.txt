@@ -87,3 +87,6 @@ https://qiita.com/elu_jaune/items/eb354558d0dc39add152
 
 2019.03.11
 項目20：IComparable<T>とIComparableにより順序関係を実装する
+
+2019.03.12
+項目21：破棄可能な型引数をサポートするようにジェネリック型を作成すること
