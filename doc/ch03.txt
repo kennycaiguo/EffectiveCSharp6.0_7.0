@@ -181,9 +181,16 @@
 (概要)
 	・共変性をもつジェネリッククラスを利用する
 (プロジェクト)
-	Coariance：テストプログラム
+	CoVariance：テストプログラム
 		・IEnumerable<CelestialBody>型(共変性）の引数を持つ関数に、IEnumerable<Planet>型の
 		　オブジェクトを渡す(正しい)
 		・IList<CelestialBody>型（不変）の引数を持つ関数に、IList<Planet>型の
 		　オブジェクトを渡す(コンパイルエラー）
+
+・2019.03.13：反変性のあるジェネリッククラス
+(概要)
+	・反変性をもつジェネリッククラスを利用する
+(プロジェクト)
+	ContraVariance：テストプログラム
+		・IComparable<CelestialBody>インターフェース(反変性）を使って、派生クラス間で比較を行う
 
