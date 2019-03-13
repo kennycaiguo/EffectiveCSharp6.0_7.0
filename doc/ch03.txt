@@ -177,3 +177,13 @@
 	・staticクラスのstaticメンバ関数をstaticクラスの修飾なしで呼び出すためにusing static文を使う
 	　		
 
+・2019.03.13：共変性のあるジェネリッククラス
+(概要)
+	・共変性をもつジェネリッククラスを利用する
+(プロジェクト)
+	Coariance：テストプログラム
+		・IEnumerable<CelestialBody>型(共変性）の引数を持つ関数に、IEnumerable<Planet>型の
+		　オブジェクトを渡す(正しい)
+		・IList<CelestialBody>型（不変）の引数を持つ関数に、IList<Planet>型の
+		　オブジェクトを渡す(コンパイルエラー）
+
