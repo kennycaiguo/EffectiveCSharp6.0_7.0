@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateAsFuncArg", "Delega
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceAsFuncArg", "InterfaceAsFuncArg\InterfaceAsFuncArg.csproj", "{0DB03B4A-3EA5-40D9-A295-23B9609B198F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateAsSequenceAlgorithm", "DelegateAsSequenceAlgorithm\DelegateAsSequenceAlgorithm.csproj", "{E12BF72D-15D1-489D-BD9F-544666575912}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0DB03B4A-3EA5-40D9-A295-23B9609B198F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DB03B4A-3EA5-40D9-A295-23B9609B198F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DB03B4A-3EA5-40D9-A295-23B9609B198F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E12BF72D-15D1-489D-BD9F-544666575912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12BF72D-15D1-489D-BD9F-544666575912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12BF72D-15D1-489D-BD9F-544666575912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12BF72D-15D1-489D-BD9F-544666575912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
