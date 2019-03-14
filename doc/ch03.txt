@@ -222,3 +222,25 @@
 	・インターフェースを実装したクラスのメソッドを呼び出して加算を計算するジェネリック関数
 (プロジェクト)
 	InterfaceAsFuncArg：テストプログラム
+
+・2019.03.14：シーケンスを処理するアルゴリズムの制約をデリゲートで実装する
+(概要)
+	・２つのシーケンスをデリゲート引数として渡されたメソッドによって組み合わせて
+	　新しいシーケンスを返すZip関数の実装
+(プロジェクト)
+	DelegateAsSequenceAlgorithm：テストプログラム
+(コメント)
+	・getだけが定義されたプロパティに対して、クラス内では設定することができる
+
+		public class Point
+		{
+	        public double X { get; }
+	        public double Y { get; }
+	        public Point(double x, double y)
+	        {
+	            this.X = x;
+	            this.Y = y;
+	        }
+			・・・
+		}
+	
