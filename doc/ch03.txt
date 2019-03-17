@@ -385,3 +385,23 @@
 	OverrideGetHashCode：テストプログラム。以下のテスト行う
 	　	・Dictionary<Name,string>のキーとして使用し、Add()とTryGetValue()で同値なNameに対する
 	　	　値の取得を行うテスト
+
+・2019.03.17：Nameクラスで等価演算子をオーバーロードする
+(概要)
+	・Nameクラスで、等価演算子(==、!=)をオーバーロードし、等価演算子を使用した等価判定を正しく行う
+(プロジェクト)
+	OverloadEqualityOperators：テストプログラム
+(コメント)
+	・等価演算子内で、左辺のnullチェックを行うために、left==nullを使用するとスタックオーバーフロー
+	　となる。代わりに、Object.RefernceEqualsを用いる
+
+        public static bool operator ==(Name left, Name right)
+        {
+            /* 2019.03.17 change: stack overflow
+            if (left == null)
+                return right == null;
+            */
+            if (Object.ReferenceEquals(left, null))
+                return Object.ReferenceEquals(right, null);
+            return left.Equals(right);
+        }
