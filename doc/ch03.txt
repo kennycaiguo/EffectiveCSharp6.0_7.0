@@ -345,3 +345,10 @@
 	　Nameオブジェクト間の同値性を判定する
 (プロジェクト)
 	CheckEqualityUtility：テストプログラム。
+
+・2019.03.17：IEquuable<T>を実装するクラス用に、同値性判定メソッドCheckEqualityをオーバーロードする
+(概要)
+	・IEquuable<T>を実装するクラス用に、同値性判定メソッドCheckEqualityをオーバーロードし、
+	　Nameオブジェクト間の同値性を判定する
+(プロジェクト)
+	OverloadCheckEquality：テストプログラム。
