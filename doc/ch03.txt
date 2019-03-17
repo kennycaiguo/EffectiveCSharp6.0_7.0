@@ -335,9 +335,12 @@
 		IComparable を実 装しなければなりません。」の例外発生する
 	・Nameと派生クラスとの比較では、Name部分の比較が行われる
 	・同値演算子は、Object.Equalsを呼び出している模様（参照の同値性を判定している）
+	　（同値演算子をオーバーロードするか、Object.Equalsをオーバーライドすべき）
 	・Dictionayに登録したキーと同値な別のNameオブジェクトをキーとして、Dictionalを参照すると、
 	　値が得られない
+	　（GetHashCodeメソッドをオーバーライドすべき）
 	・Nameと派生クラスとの同値判定では、Name部分で同値判定される
+	　(引数の型をGetType()で調べて、typeof(Name)と一致しない時は、同値としないほうがよい）
 
 ・2019.03.17：System.Objectを使用した同値性判定ユーティリティメソッドCheckEqualityの導入
 (概要)
