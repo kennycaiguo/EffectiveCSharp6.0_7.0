@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericInterfaceVersion", "GenericInterfaceVersion\GenericInterfaceVersion.csproj", "{D947085E-FE58-4438-9857-A4B56B634F82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckEqualityUtility", "CheckEqualityUtility\CheckEqualityUtility.csproj", "{CE19C7E3-08CB-4740-B665-C515E8BA94DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D947085E-FE58-4438-9857-A4B56B634F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D947085E-FE58-4438-9857-A4B56B634F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D947085E-FE58-4438-9857-A4B56B634F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
