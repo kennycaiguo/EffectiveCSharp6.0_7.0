@@ -307,3 +307,24 @@
 	・ここでは、すべての型のシーケンスを文字列に変換するジェネリックメソッドを定義する
 (プロジェクト)
 	NonGenericClassGenericMethod：テストプログラム
+
+
+2019.03.16、2019.03.17
+項目26：ジェネリックインターフェースとともに古いインターフェースを実装すること
+
+・2019.03.16、2019.03.17：ジェネリックインターフェースIComparable<T>、IEquatable<T>を実装する
+(概要)
+	・ジェネリックスインターフェースIComparable<T>、IEquatbale<T>を実装し、順序関係と同値関係を
+	　Nameクラスに定義する
+	・非ジェネリックスインターフェースは実装しないバージョン
+(プロジェクト)
+	GenericInterfaceVersion：テストプログラム。
+	　順序関係として以下をテストする
+		・CompareTo実装のロジックのテスト
+		・List<Name>のSort（ジェネリックな大小比較IComparable<Name>を使用する）
+		・Nameのリストを保持したArrayListのSort（非ジェネリックな比較IComparableを使用する）
+		・Nameと、Nameの派生クラスDerivedNameの比較
+(コメント)
+	・ArrayList.Sortでは、「System.ArgumentException: 少なくとも 1 つのオブジェクトで 
+		IComparable を実 装しなければなりません。」の例外発生する
+	・Nameと派生クラスとの比較では、Name部分の比較が行われる
