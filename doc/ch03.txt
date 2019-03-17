@@ -334,8 +334,8 @@
 	・ArrayList.Sortでは、「System.ArgumentException: 少なくとも 1 つのオブジェクトで 
 		IComparable を実 装しなければなりません。」の例外発生する
 	・Nameと派生クラスとの比較では、Name部分の比較が行われる
-	・同値演算子は、Object.Equalsを呼び出している模様（参照の同値性を判定している）
-	　（同値演算子をオーバーロードするか、Object.Equalsをオーバーライドすべき）
+	・同値演算子は、参照の同値性を判定している
+	　（同値演算子をオーバーロードするべき）
 	・Dictionayに登録したキーと同値な別のNameオブジェクトをキーとして、Dictionalを参照すると、
 	　値が得られない
 	　（GetHashCodeメソッドをオーバーライドすべき）
