@@ -377,3 +377,11 @@
                 return this.Equals(obj as Name);
             else return false;
         }
+
+・2019.03.17：NameクラスでObject.GetHashCodeをオーバーライドする
+(概要)
+	・Nameクラスで、Object.GetHashCodeをオーバーライドし、ハッシュテーブルのキー検索を正しく行う
+(プロジェクト)
+	OverrideGetHashCode：テストプログラム。以下のテスト行う
+	　	・Dictionary<Name,string>のキーとして使用し、Add()とTryGetValue()で同値なNameに対する
+	　	　値の取得を行うテスト
