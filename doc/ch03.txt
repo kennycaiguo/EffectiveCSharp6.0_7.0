@@ -355,3 +355,13 @@
 	　Nameオブジェクト間の同値性を判定する
 (プロジェクト)
 	OverloadCheckEquality：テストプログラム。
+
+・2019.03.17：NameクラスでObject.Equlasをオーバーライドする
+(概要)
+	・Nameクラスで、Object.Equalsをオーバーライドし、Object経由でのNameの同値性判定を正しく行う
+(プロジェクト)
+	OverrideObjectEquals：テストプログラム。以下のテスト行う
+		・Object経由で同値性判定を行う、CheckEqualityメソッドの動作テスト
+		・等価演算子(==、!=)の動作テスト
+(コメント)
+	・等価演算子は、Object.Equalsのオーバーライドとは関係なく、参照の同値性に基づいて判定する模様
