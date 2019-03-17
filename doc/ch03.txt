@@ -326,8 +326,10 @@
 		・Nameと、Nameの派生クラスDerivedNameの比較
 	　同値関係としては以下をテストする
 	　	・Equals実装のロジックのテスト
-	　	
+	　	・同値演算子（==、!=）のテスト
 (コメント)
 	・ArrayList.Sortでは、「System.ArgumentException: 少なくとも 1 つのオブジェクトで 
 		IComparable を実 装しなければなりません。」の例外発生する
 	・Nameと派生クラスとの比較では、Name部分の比較が行われる
+	・同値演算子は、Object.Equalsを呼び出している模様（参照の同値性を判定している）
+	
