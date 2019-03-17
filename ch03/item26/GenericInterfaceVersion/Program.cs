@@ -61,7 +61,8 @@ namespace GenericInterfaceVersion
             {
                 new Name { Last = "a" }, new Name { Last = "b" },
                 new Name { First = "a" }, new Name { First = "b" },
-                new Name { Middle = "a" }, new Name { Middle = "b" }
+                new Name { Middle = "a" }, new Name { Middle = "b" },
+                new Name { }
             };
             list.Sort();
             foreach (var item in list)
