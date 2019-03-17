@@ -68,7 +68,7 @@ namespace OverloadEqualityOperators
 
         public static bool operator ==(Name left, Name right)
         {
-            /*
+            /* 2019.03.17 change: stack overflow
             if (left == null)
                 return right == null;
             */
@@ -79,7 +79,7 @@ namespace OverloadEqualityOperators
 
         public static bool operator !=(Name left, Name right)
         {
-            /*
+            /* 2019.03.17 change
             if (left == null)
                 return right != null;
             */
