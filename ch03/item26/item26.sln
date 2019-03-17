@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericInterfaceVersion", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckEqualityUtility", "CheckEqualityUtility\CheckEqualityUtility.csproj", "{CE19C7E3-08CB-4740-B665-C515E8BA94DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadCheckEquality", "OverloadCheckEquality\OverloadCheckEquality.csproj", "{3A03E05B-F259-4736-946D-7D14F7D1E8D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE19C7E3-08CB-4740-B665-C515E8BA94DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A03E05B-F259-4736-946D-7D14F7D1E8D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A03E05B-F259-4736-946D-7D14F7D1E8D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A03E05B-F259-4736-946D-7D14F7D1E8D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A03E05B-F259-4736-946D-7D14F7D1E8D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
