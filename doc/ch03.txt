@@ -323,12 +323,13 @@
 		・CompareTo実装のロジックのテスト
 		・List<Name>のSort（ジェネリックな大小比較IComparable<Name>を使用する）
 		・Nameのリストを保持したArrayListのSort（非ジェネリックな比較IComparableを使用する）
-		・Nameと、Nameの派生クラスDerivedNameの比較
+		・Nameと、Nameの派生クラスDerivedNameの大小比較
 	　同値関係としては以下をテストする
 	　	・Equals実装のロジックのテスト
 	　	・同値演算子（==、!=）のテスト
 	　	・Dictionary<Name,string>のキーとして使用し、Add()とTryGetValue()で同値なNameに対する
 	　	　値の取得を行うテスト
+		・Nameと、Nameの派生クラスDerivedNameの同値判定
 (コメント)
 	・ArrayList.Sortでは、「System.ArgumentException: 少なくとも 1 つのオブジェクトで 
 		IComparable を実 装しなければなりません。」の例外発生する
@@ -336,3 +337,4 @@
 	・同値演算子は、Object.Equalsを呼び出している模様（参照の同値性を判定している）
 	・Dictionayに登録したキーと同値な別のNameオブジェクトをキーとして、Dictionalを参照すると、
 	　値が得られない
+	・Nameと派生クラスとの同値判定では、Name部分で同値判定される
