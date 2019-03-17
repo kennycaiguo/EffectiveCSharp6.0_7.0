@@ -324,6 +324,9 @@
 		・List<Name>のSort（ジェネリックな大小比較IComparable<Name>を使用する）
 		・Nameのリストを保持したArrayListのSort（非ジェネリックな比較IComparableを使用する）
 		・Nameと、Nameの派生クラスDerivedNameの比較
+	　同値関係としては以下をテストする
+	　	・Equals実装のロジックのテスト
+	　	
 (コメント)
 	・ArrayList.Sortでは、「System.ArgumentException: 少なくとも 1 つのオブジェクトで 
 		IComparable を実 装しなければなりません。」の例外発生する
