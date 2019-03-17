@@ -11,11 +11,8 @@ namespace GenericInterfaceVersion
     {
         static void TestCompareTo()
         {
-            Console.WriteLine("TestCompareTo():");
+            Console.WriteLine("\nTestCompareTo():\n");
 
-            string s_a = "a";
-            string s_b = "b";
-            string s_null = null;
             int result;
             Name name_null = null;
             Name name_n_n_n = new Name();
@@ -58,7 +55,7 @@ namespace GenericInterfaceVersion
         
         static void TestGenericSort()
         {
-            Console.WriteLine("TestGenericSort():");
+            Console.WriteLine("\nTestGenericSort():\n");
 
             var list = new List<Name>
             {
@@ -76,7 +73,7 @@ namespace GenericInterfaceVersion
 
         static void TestNonGenericSort()
         {
-            Console.WriteLine("TestNonGenericSort():");
+            Console.WriteLine("\nTestNonGenericSort():\n");
 
             var list = new ArrayList
             {
@@ -99,11 +96,42 @@ namespace GenericInterfaceVersion
             }
         }
 
+        static void TestCompareToDerived()
+        {
+            Console.WriteLine("\nTestCompareToDerived():\n");
+
+            int result;
+            Name name_n_n_n = new Name();
+            Name name_a_n_n = new Name { Last = "a" };
+            Name name_b_n_n = new Name { Last = "b" };
+            DerivedName derived_a_n_n__nick = new DerivedName { Last = "a", NickName = "nick" };
+            DerivedName derived_b_n_n__nick = new DerivedName { Last = "b", NickName = "nick" };
+
+            result = name_a_n_n.CompareTo(derived_a_n_n__nick);
+            Console.WriteLine($"name_a_n_n.CompareTo(derived_a_n_n__nick): {result}");
+
+            result = name_a_n_n.CompareTo(derived_b_n_n__nick);
+            Console.WriteLine($"name_a_n_n.CompareTo(derived_b_n_n__nick): {result}");
+
+            result = name_b_n_n.CompareTo(derived_a_n_n__nick);
+            Console.WriteLine($"name_b_n_n.CompareTo(derived_a_n_n__nick): {result}");
+
+            result = derived_a_n_n__nick.CompareTo(name_a_n_n);
+            Console.WriteLine($"derived_a_n_n__nick.CompareTo(name_a_n_n): {result}");
+
+            result = derived_a_n_n__nick.CompareTo(name_b_n_n);
+            Console.WriteLine($"derived_a_n_n__nick.CompareTo(name_b_n_n): {result}");
+
+            result = derived_b_n_n__nick.CompareTo(name_a_n_n);
+            Console.WriteLine($"derived_b_n_n__nick.CompareTo(name_a_n_n): {result}");
+        }
+
         static void Main(string[] args)
         {
             TestCompareTo();
             TestGenericSort();
             TestNonGenericSort();
+            TestCompareToDerived();
         }
     }
 }
