@@ -233,6 +233,30 @@ namespace GenericInterfaceVersion
             Console.WriteLine($"result = myTable.TryGetValue(name_a_a_a_dash, out value); result: {result}, value: {value}");
         }
 
+        static void TestEqualsDerived()
+        {
+            Console.WriteLine("\nTestEqualsDerived():\n");
+
+            bool result;
+            Name name_n_n_n = new Name();
+            Name name_a_n_n = new Name { Last = "a" };
+            Name name_b_n_n = new Name { Last = "b" };
+            DerivedName derived_a_n_n__nick = new DerivedName { Last = "a", NickName = "nick" };
+            DerivedName derived_b_n_n__nick = new DerivedName { Last = "b", NickName = "nick" };
+
+            result = name_a_n_n.Equals(derived_a_n_n__nick);
+            Console.WriteLine($"name_a_n_n.Equals(derived_a_n_n__nick): {result}");
+
+            result = name_a_n_n.Equals(derived_b_n_n__nick);
+            Console.WriteLine($"name_a_n_n.Equals(derived_b_n_n__nick): {result}");
+
+            result = derived_a_n_n__nick.Equals(name_a_n_n);
+            Console.WriteLine($"derived_a_n_n__nick.Equals(name_a_n_n): {result}");
+
+            result = derived_a_n_n__nick.Equals(name_b_n_n);
+            Console.WriteLine($"derived_a_n_n__nick.Equals(name_b_n_n): {result}");
+        }
+
         static void Main(string[] args)
         {
             TestCompareTo();
@@ -243,6 +267,7 @@ namespace GenericInterfaceVersion
             TestEquals();
             TestEqualityOperators();
             TestDictionaryKey();
+            TestEqualsDerived();
         }
     }
 }
