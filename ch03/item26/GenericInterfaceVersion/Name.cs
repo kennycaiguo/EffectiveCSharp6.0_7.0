@@ -30,9 +30,17 @@ namespace GenericInterfaceVersion
             return Comparer<string>.Default.Compare(Middle, other.Middle);
         }
 
+        // IEquatable<Name>メンバ
         public bool Equals(Name other)
         {
-            throw new NotImplementedException();
+            if (Object.ReferenceEquals(this, other))
+                return true;
+            if (Object.ReferenceEquals(other, null))
+                return false;
+            // 意味的にはEqualityComparer<string>.Defaultと同じ
+            return Last == other.Last &&
+                First == other.First &&
+                Middle == other.Middle;
         }
 
         public override string ToString()
