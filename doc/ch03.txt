@@ -365,3 +365,15 @@
 		・等価演算子(==、!=)の動作テスト
 (コメント)
 	・等価演算子は、Object.Equalsのオーバーライドとは関係なく、参照の同値性に基づいて判定する模様
+	・Name.Equalsオーバーライドにて、obj.GetType()を実行する前に、objのnullチェックが必要
+	
+	    public override bool Equals(object obj)
+        {
+            // 2019.03.17 add: check obj == null
+            if (obj == null)
+                return false;
+
+            if (obj.GetType() == typeof(Name))
+                return this.Equals(obj as Name);
+            else return false;
+        }
