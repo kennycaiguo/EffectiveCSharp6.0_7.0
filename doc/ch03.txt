@@ -405,3 +405,15 @@
                 return Object.ReferenceEquals(right, null);
             return left.Equals(right);
         }
+
+・2019.03.18：IComparableを実装する
+(概要)
+	・Nameクラスで、非ジェネリックなICompableを実装する。IComparable.CompareTo(object)メソッドでは、
+	　引数がNameオブジェクトであることを動的に確認し、ICompable<Name>.CompareTo(Name)を呼び出す
+(プロジェクト)
+	ImplementsNonGenericIComparable：テストプログラム
+(コメント)
+	・引数objの動的型確認で、obj.GetType()呼び出しで、objがnullの時、NullReferenceExceptionを
+	　発生する。
+	・また、型チェックで、Name等しいことを条件とすると（obj.GetType!=type(Name)）、Nameの
+	　派生クラスとの比較ができなくなる。これは、ICompable<Name>の実装と整合性が取れない
