@@ -309,7 +309,7 @@
 	NonGenericClassGenericMethod：テストプログラム
 
 
-2019.03.16、2019.03.17、2019.03.18
+2019.03.16、2019.03.17、2019.03.18、2019.03.19
 項目26：ジェネリックインターフェースとともに古いインターフェースを実装すること
 
 ・2019.03.16、2019.03.17：ジェネリックインターフェースIComparable<T>、IEquatable<T>を実装する
@@ -429,3 +429,23 @@
             return this.CompareTo(obj as Name);
         }
 
+・2019.03.19：比較演算子をオーバーロードする
+(概要)
+	・Nameクラスで、大小比較演算子をオーバーロードする。比較演算子では、引数のnullチェックを
+	　実施したのち、Name.CompareTo(Name)を呼び出して、大小比較を行う
+(プロジェクト)
+	OverloadRelationOperators：テストプログラム
+(コメント)
+	・Nameクラスで等価演算子をオーバーロードしているので、単純なnullチェックは、
+	　Object.RefernceEqual()を利用するほうが望ましい
+
+        public static bool operator <(Name left, Name right)
+        {
+            /* 2019.03.19: change
+            if (left == null)
+                return right != null;
+            */
+            if (Object.ReferenceEquals(left, null))
+                return !Object.ReferenceEquals(right, null);
+            return left.CompareTo(right) < 0;
+        }
