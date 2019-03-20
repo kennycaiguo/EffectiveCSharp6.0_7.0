@@ -449,3 +449,14 @@
                 return !Object.ReferenceEquals(right, null);
             return left.CompareTo(right) < 0;
         }
+
+
+2019.03.20
+項目27：最小限に制限されたインターフェースを拡張メソッドにより機能拡張する
+
+・2019.03.20：拡張メソッドによってIComparable<T>の大小比較機能を拡張する
+(概要)
+	・拡張メソッドのよって、IComparable<T>に大小比較機能(戻り値はbool)を実現する。
+	　IComparable<Name>を実装したNameクラスで、動作を確認する
+(プロジェクト)
+	ExtensionMethod：テストプログラム
