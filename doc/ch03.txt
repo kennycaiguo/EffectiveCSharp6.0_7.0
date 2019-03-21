@@ -487,3 +487,11 @@
 	　の利用方法
 (プロジェクト)
 	ExtensionsForIEnumerableCustmer：テストプログラム
+
+・2019.03.21：ストレージモデルでCustomerのリストを実現
+(概要)
+	・アプリケーションドメインのモデルであるCustomerのリスト(CustomerList)を、ストレージモデル
+	　List<Customer>を派生することでモデル化。
+	　CusomerListに対する操作は、（拡張メソッドでなく）インスタンスメソッドとして実装する
+(プロジェクト)
+	StorageModelForCustmer：テストプログラム
