@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsForIEnumerableInt", "ExtensionsForIEnumerableInt\ExtensionsForIEnumerableInt.csproj", "{E707B964-755B-4F22-96A8-8AACEDA0D491}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionForIEnumerableCustomer", "ExtensionForIEnumerableCustomer\ExtensionForIEnumerableCustomer.csproj", "{28A4D2DD-4029-4977-9EF2-BE7FDCF329FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E707B964-755B-4F22-96A8-8AACEDA0D491}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E707B964-755B-4F22-96A8-8AACEDA0D491}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E707B964-755B-4F22-96A8-8AACEDA0D491}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28A4D2DD-4029-4977-9EF2-BE7FDCF329FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28A4D2DD-4029-4977-9EF2-BE7FDCF329FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28A4D2DD-4029-4977-9EF2-BE7FDCF329FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28A4D2DD-4029-4977-9EF2-BE7FDCF329FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
