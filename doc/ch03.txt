@@ -467,3 +467,16 @@
 	　を定義すると、アプリケーションに対する破壊的変更となる
 (プロジェクト)
 	ImplementConflictingExtensionMethod：テストプログラム
+
+
+2019.03.21
+項目27：構築された型に対する拡張メソッドを検討すること
+
+・2019.03.21：IEnumerable<int>の拡張メソッド
+(概要)
+	・構築されたインターフェースIEnumerable<int>の拡張メソッド、Average()、Max()、Min()、Sum()
+	　の利用方法
+(プロジェクト)
+	ExtensionsForIEnumerableInt：テストプログラム
+(コメント)
+	・テキストの記述とは異なり、IEnumerable<int>.Average()の戻り値はdoubleである
