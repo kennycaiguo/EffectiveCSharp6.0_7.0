@@ -480,3 +480,10 @@
 	ExtensionsForIEnumerableInt：テストプログラム
 (コメント)
 	・テキストの記述とは異なり、IEnumerable<int>.Average()の戻り値はdoubleである
+
+・2019.03.21：IEnumerable<Custmer>の拡張メソッド
+(概要)
+	・構築されたインターフェースIEnumerable<Customer>の拡張メソッド、SendEmail()、LostProspects()
+	　の利用方法
+(プロジェクト)
+	ExtensionsForIEnumerableCustmer：テストプログラム
