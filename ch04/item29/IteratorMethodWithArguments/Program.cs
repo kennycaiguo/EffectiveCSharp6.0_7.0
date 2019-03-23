@@ -12,7 +12,7 @@ namespace IteratorMethodWithArguments
     {
         static void PrintChars(char first, char last)
         {
-            Console.WriteLine($"\nTestSuccessCase(first={(int)first}, last={(int)last}):\n");
+            Console.WriteLine($"\nPrintChars(first={(int)first}, last={(int)last}):\n");
 
             IEnumerable<char> enemerable;
             try
