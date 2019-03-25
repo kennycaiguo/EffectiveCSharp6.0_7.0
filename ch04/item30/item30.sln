@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateFilteredTuple", "Ge
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenerateFilteredSortedTuple", "GenerateFilteredSortedTuple\GenerateFilteredSortedTuple.csproj", "{DED2E562-91F8-43A6-8993-E708C209AA71}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryMethod", "QueryMethod\QueryMethod.csproj", "{B38FF864-4389-47CE-AA02-D3B51A4E2055}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DED2E562-91F8-43A6-8993-E708C209AA71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED2E562-91F8-43A6-8993-E708C209AA71}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED2E562-91F8-43A6-8993-E708C209AA71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38FF864-4389-47CE-AA02-D3B51A4E2055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38FF864-4389-47CE-AA02-D3B51A4E2055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38FF864-4389-47CE-AA02-D3B51A4E2055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B38FF864-4389-47CE-AA02-D3B51A4E2055}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
