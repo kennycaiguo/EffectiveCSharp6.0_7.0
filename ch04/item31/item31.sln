@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniqueLoop", "UniqueLoop\UniqueLoop.csproj", "{4247644C-813E-440F-95FC-E7E9CFAB7EBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniueIterator", "UniueIterator\UniueIterator.csproj", "{1D6DE1CD-5B9A-4BAC-B827-53C6319EC098}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4247644C-813E-440F-95FC-E7E9CFAB7EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4247644C-813E-440F-95FC-E7E9CFAB7EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4247644C-813E-440F-95FC-E7E9CFAB7EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D6DE1CD-5B9A-4BAC-B827-53C6319EC098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D6DE1CD-5B9A-4BAC-B827-53C6319EC098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D6DE1CD-5B9A-4BAC-B827-53C6319EC098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D6DE1CD-5B9A-4BAC-B827-53C6319EC098}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
