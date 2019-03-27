@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateIntList", "CreateIntList\CreateIntList.csproj", "{E14FBFAB-3199-4CCA-84A5-0D942C9F3497}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E14FBFAB-3199-4CCA-84A5-0D942C9F3497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E14FBFAB-3199-4CCA-84A5-0D942C9F3497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E14FBFAB-3199-4CCA-84A5-0D942C9F3497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E14FBFAB-3199-4CCA-84A5-0D942C9F3497}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEC82DD3-ED97-4B0F-B476-2E0C58FE2DF6}
+	EndGlobalSection
+EndGlobal
