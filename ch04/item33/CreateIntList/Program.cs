@@ -19,6 +19,32 @@ namespace CreateIntList
             return collection;
         }
 
+        static void TestTakeWhileDelegate()
+        {
+            Console.WriteLine("TestTakeWhileDelegate():");
+
+            // 匿名デリゲートを使用する
+            var sequence = CreateSequence(100000000, 0, 7).
+                TakeWhile(delegate (int num) { return num < 1000; });
+
+            foreach (var i in sequence)
+                Console.Write("{0} ", i);
+            Console.WriteLine();
+        }
+
+        static void TestTakeWhileLambda()
+        {
+            Console.WriteLine("TestTakeWhileLambda():");
+
+            // ラムダ式を使用する
+            var sequence = CreateSequence(100000000, 0, 7).
+                TakeWhile((num) => num < 1000);
+
+            foreach (var i in sequence)
+                Console.Write("{0} ", i);
+            Console.WriteLine();
+        }
+
         static void TestBindingList()
         {
             Console.WriteLine("TestBindingList():");
@@ -36,6 +62,8 @@ namespace CreateIntList
         static void Main(string[] args)
         {
             TestBindingList();
+            TestTakeWhileDelegate();
+            TestTakeWhileLambda();
         }
     }
 }
