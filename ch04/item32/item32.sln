@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveryNthItemFilter", "Every
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SameTypeConverter", "SameTypeConverter\SameTypeConverter.csproj", "{42399487-4181-424A-A927-2F703EB1D445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DifferentTypeConverter", "DifferentTypeConverter\DifferentTypeConverter.csproj", "{07318E4B-1F87-42B2-B228-6AF3FA838114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{42399487-4181-424A-A927-2F703EB1D445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42399487-4181-424A-A927-2F703EB1D445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42399487-4181-424A-A927-2F703EB1D445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07318E4B-1F87-42B2-B228-6AF3FA838114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07318E4B-1F87-42B2-B228-6AF3FA838114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07318E4B-1F87-42B2-B228-6AF3FA838114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07318E4B-1F87-42B2-B228-6AF3FA838114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
