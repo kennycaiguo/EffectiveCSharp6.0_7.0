@@ -125,3 +125,14 @@
 	ZipStringSequence：テストプログラム
 
 
+2019.03.27
+項目32：反復処理をAction、Predicate、Funcと分離する
+
+・2019.03.27：リストに対する、PredicateとFuncコールバック処理
+(概要)
+	・整数のリストに対して以下を行う、
+		（Predicate)RemoveAllを使って、値が5である要素をすべて削除する
+		（Func)ForEachメソッドを使って、リスト内の要素をすべて表示する
+(プロジェクト)
+	ListManipulate：テストプログラム
+

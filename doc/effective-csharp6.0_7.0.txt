@@ -122,3 +122,6 @@ https://qiita.com/elu_jaune/items/eb354558d0dc39add152
 
 2019.03.26
 項目31：シーケンス用の組み合わせ可能なAPIを作成する
+
+2019.03.27
+項目32：反復処理をAction、Predicate、Funcと分離する
