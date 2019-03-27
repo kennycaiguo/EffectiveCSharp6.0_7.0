@@ -125,3 +125,6 @@ https://qiita.com/elu_jaune/items/eb354558d0dc39add152
 
 2019.03.27、2019.03.28
 項目32：反復処理をAction、Predicate、Funcと分離する
+
+2019.03.28
+項目33：要求に応じてシーケンスの要素を生成する

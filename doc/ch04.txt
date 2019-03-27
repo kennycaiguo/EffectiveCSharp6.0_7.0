@@ -163,3 +163,27 @@
 	・入力シーケンスの要素を変換し、新しいシーケンスを返す。入力と出力は任意に指定可能
 (プロジェクト)
 	DifferentTypeConverter：テストプログラム
+
+
+2019.03.28
+項目33：要求に応じてシーケンスの要素を生成する
+
+・2019.03.28：整数のリストを生成する
+(概要)
+	・整数のリストを生成し、以下を行う
+		BindingListによってデータバインディングをサポートする
+(プロジェクト)
+	CreateIntList：テストプログラム
+(コメント)
+	・テキストのコード例で、BindingListの引数となるCreateSequenceの結果をToListで変換すると、
+	　テキストの意図と反すると思われる。代わりに以下のようなコード例とした
+
+            var list = CreateSequence(100, 0, 5);
+            var data1 = new BindingList<int>(list);
+            var data2 = new BindingList<int>(list);
+
+            data1[5] = 10000;
+            foreach (var i in data2)
+                Console.Write("{0} ", i);
+            Console.WriteLine();
+
