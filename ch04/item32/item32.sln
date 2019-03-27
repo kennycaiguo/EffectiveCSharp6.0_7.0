@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhereFilter", "WhereFilter\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EveryNthItemFilter", "EveryNthItemFilter\EveryNthItemFilter.csproj", "{E2D7011F-7CA7-4662-BB9E-F3D4FB804CF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SameTypeConverter", "SameTypeConverter\SameTypeConverter.csproj", "{42399487-4181-424A-A927-2F703EB1D445}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{E2D7011F-7CA7-4662-BB9E-F3D4FB804CF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2D7011F-7CA7-4662-BB9E-F3D4FB804CF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2D7011F-7CA7-4662-BB9E-F3D4FB804CF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42399487-4181-424A-A927-2F703EB1D445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42399487-4181-424A-A927-2F703EB1D445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42399487-4181-424A-A927-2F703EB1D445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42399487-4181-424A-A927-2F703EB1D445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
