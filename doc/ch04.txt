@@ -198,3 +198,16 @@
 		（匿名デリゲートとラムダ式を使う）
 (プロジェクト)
 	GenerateIntSequence：テストプログラム
+
+
+2019.03.30
+項目34：関数引数を使用して役割を分離する
+
+・2019.03.30：List<T>.RemoveAllをインターフェースで実装する
+(概要)
+	・List<T>.RemoveAllと同等な機能を持った独自のクラスMyListを実装する
+	・MyList<T>｡RemoveAllでは、インターフェースIPredicate<T>を引数として受け取り、
+	　そのMatchメソッドをコールバックすることで、削除の判定をする
+(プロジェクト)
+	ListRemoveAll：テストプログラム
+
