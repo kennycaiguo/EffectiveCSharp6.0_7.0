@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonLib", "PersonLib\Pers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadExtension", "OverloadExtension\OverloadExtension.csproj", "{CBDB1A27-92B9-443F-8CA4-1915BA86E76C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaticUtilityMethod", "StaticUtilityMethod\StaticUtilityMethod.csproj", "{C921C385-672A-4A32-ABF4-93E38C4F7DFD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{CBDB1A27-92B9-443F-8CA4-1915BA86E76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBDB1A27-92B9-443F-8CA4-1915BA86E76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBDB1A27-92B9-443F-8CA4-1915BA86E76C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C921C385-672A-4A32-ABF4-93E38C4F7DFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C921C385-672A-4A32-ABF4-93E38C4F7DFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C921C385-672A-4A32-ABF4-93E38C4F7DFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C921C385-672A-4A32-ABF4-93E38C4F7DFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
