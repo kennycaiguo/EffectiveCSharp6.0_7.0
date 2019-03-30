@@ -218,3 +218,22 @@
 (プロジェクト)
 	GenericZip：テストプログラム
 
+
+・2019.03.30：項目33のCreateSequenceをジェネリックメソッドとデリゲートで実装する
+(概要)
+	・指定個数のシーケンスを、ジェネリックメソッドとデリゲート（シーケンスの各要素を返す関数）
+	　によって実現する
+(プロジェクト)
+	GenericCreateSequence：テストプログラム
+(コメント)
+	テキストの例では、シーケンス出力が項目33のものと異なる結果となる（最初の要素が０とならない）
+	ここでは、以下のようにコールバック関数にループのインデックスを渡すように変更した
+	
+        public static IEnumerable<T> CreateSequence<T>(
+            int numberOfElements,
+            Func<int, T> generator)
+        {
+            for (var i = 0; i < numberOfElements; i++)
+                yield return generator(i);
+        }
+	
