@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListRemoveAll", "ListRemove
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericZipper", "GenericZipper\GenericZipper.csproj", "{0AA97ABD-47B1-49C0-A0BC-EAD0A90A8E38}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCreateSequence", "GenericCreateSequence\GenericCreateSequence.csproj", "{32B325B5-0EA0-44F1-8FD8-7A848DAD07E6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0AA97ABD-47B1-49C0-A0BC-EAD0A90A8E38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA97ABD-47B1-49C0-A0BC-EAD0A90A8E38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AA97ABD-47B1-49C0-A0BC-EAD0A90A8E38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B325B5-0EA0-44F1-8FD8-7A848DAD07E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B325B5-0EA0-44F1-8FD8-7A848DAD07E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B325B5-0EA0-44F1-8FD8-7A848DAD07E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B325B5-0EA0-44F1-8FD8-7A848DAD07E6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
