@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using LinqAnalyzer;
+
 namespace WhereMethod
 {
     class Program
@@ -40,10 +42,27 @@ namespace WhereMethod
             Console.WriteLine();
         }
 
+        static void AnalizeWherePrase()
+        {
+            Console.WriteLine("AnalyzeWherePrase()");
+
+            var numbers = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var tracer = new LinqTracer<int>(numbers);
+
+            var smallNumbers = from n in tracer
+                               where n < 5
+                               select n;
+
+            foreach (var n in smallNumbers)
+                Console.Write($"{n} ");
+            Console.WriteLine();
+        }
+
         static void Main(string[] args)
         {
             TestWherePhrase();
             TestWhereMethod();
+            AnalizeWherePrase();
         }
     }
 }
