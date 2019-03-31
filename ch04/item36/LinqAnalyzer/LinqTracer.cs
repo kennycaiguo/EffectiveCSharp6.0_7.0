@@ -24,5 +24,11 @@ namespace LinqAnalyzer
             return new LinqTracer<T>(enumerable.Where(predicate));
         }
 
+        // trace Select method
+        public LinqTracer<U> Select<U>(Func<T, U> selector)
+        {
+            Console.WriteLine(".Select()");
+            return new LinqTracer<U>(enumerable.Select(selector));
+        }
     }
 }

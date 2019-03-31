@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhereMethod", "WhereMethod\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqAnalyzer", "LinqAnalyzer\LinqAnalyzer.csproj", "{D68FD7BD-C1BF-49FE-BC96-CD0D958F9BD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMethod", "SelectMethod\SelectMethod.csproj", "{99C5C965-BC6D-4727-9A69-0D64C0017864}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D68FD7BD-C1BF-49FE-BC96-CD0D958F9BD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D68FD7BD-C1BF-49FE-BC96-CD0D958F9BD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D68FD7BD-C1BF-49FE-BC96-CD0D958F9BD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99C5C965-BC6D-4727-9A69-0D64C0017864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99C5C965-BC6D-4727-9A69-0D64C0017864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99C5C965-BC6D-4727-9A69-0D64C0017864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99C5C965-BC6D-4727-9A69-0D64C0017864}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
