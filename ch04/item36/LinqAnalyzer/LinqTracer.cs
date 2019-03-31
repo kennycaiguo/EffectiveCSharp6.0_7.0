@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LinqAnalyzer
 {
-    public class LinqTracer<T> : IEnumerable<T>
+    public class LinqTracer<T>
     {
         IEnumerable<T> enumerable;
         public LinqTracer(IEnumerable<T> enumerable)
@@ -15,17 +15,7 @@ namespace LinqAnalyzer
             this.enumerable = enumerable;
         }
 
-        // implements IEnumerable<T>
-
-        public IEnumerator<T> GetEnumerator()
-        {
-            return enumerable.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return enumerable.GetEnumerator();
-        }
+        public IEnumerable<T> AsEnumerable() => this.enumerable;
 
         // trace Where method
         public LinqTracer<T> Where(Func<T, bool> predicate)

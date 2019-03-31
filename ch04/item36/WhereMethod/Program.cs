@@ -53,7 +53,7 @@ namespace WhereMethod
                                where n < 5
                                select n;
 
-            foreach (var n in smallNumbers)
+            foreach (var n in smallNumbers.AsEnumerable())
                 Console.Write($"{n} ");
             Console.WriteLine();
         }
