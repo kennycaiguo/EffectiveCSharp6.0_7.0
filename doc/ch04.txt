@@ -291,7 +291,8 @@
 ・2019.03.31：select句とSelectメソッド
 (概要)
 	・select句を使用した例題と、select句が変換されたSelectメソッドのコードを確認する
-		・単純な非生成型のselect
+		・単純な非生成型のselect句
+		・値を変換するselect句
 (プロジェクト)
 	WhereMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ
