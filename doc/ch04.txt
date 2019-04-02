@@ -297,3 +297,12 @@
 (プロジェクト)
 	WhereMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ
+
+・2019.04.02：orderBy句と　OrderBy, OrderByDescending、ThenBy、ThenByDescendingメソッド
+(概要)
+	・orderBy句を使用した例題と、それが変換されたOrderBy、OrderByDescending、ThenBy、
+	　ThenByDescendingメソッドのコードを確認する
+		・複数の比較項目を持つorderBy句が、OrderByとThenByメソッドに変換されること
+(プロジェクト)
+	OrderByThenMethod：テストプログラム
+	LinqAnalizer:Linqを分析するライブラリ
