@@ -30,5 +30,25 @@ namespace LinqAnalyzer
             Console.WriteLine(".Select()");
             return new LinqTracer<U>(enumerable.Select(selector));
         }
+
+        /*
+        // trace OrderBy, OrderByDescending method
+        public LinqTracer_Ordered<T> OrderBy<K>(Func<T, K> keySelector)
+        {
+            Console.WriteLine(".OrderBy()");
+            return new LinqTracer_Ordered<T>(enumerable.OrderBy(keySelector));
+        }
+        */
     }
+
+    /*
+    public class LinqTracer_Ordered<T> : LinqTracer<T>
+    {
+        IEnumerable<T> enumerable;
+        public LinqTracer_Ordered(IEnumerable<T> enumerable)
+        {
+
+        }
+    }
+    */
 }

@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LinqAnalyzer\LinqAnalyzer.csproj">
+      <Project>{d68fd7bd-c1bf-49fe-bc96-cd0d958f9bd1}</Project>
+      <Name>LinqAnalyzer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

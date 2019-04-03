@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using LinqAnalyzer;
+
 namespace OrderByThenByMethod
 {
     class Program
@@ -45,9 +47,9 @@ namespace OrderByThenByMethod
                 Console.WriteLine(p);
         }
 
-        static void TestOrderByMethod()
+        static void TestOrderByThenByMethod()
         {
-            Console.WriteLine("\nTestOrderByMethod():");
+            Console.WriteLine("\nTestOrderByThenByMethod():");
 
             var employees = MakeEmployees();
             var people = employees.Where(e => e.Age > 30).
@@ -59,10 +61,47 @@ namespace OrderByThenByMethod
                 Console.WriteLine(p);
         }
 
+        /*
+        static void AnalizeOrderByPhrase()
+        {
+            Console.WriteLine("\nAnalizeOrderByPhrase():");
+
+            var employees = MakeEmployees();
+            var tracer = new LinqTracer<Employee>(employees);
+
+            var people = from e in tracer
+                         where e.Age > 30
+                         orderby e.LastName, e.FirstName, e.Age
+                         select e;
+
+            foreach (var p in people.AsEnumerable())
+                Console.WriteLine(p);
+
+        }
+        */
+
+        static void TestMultipleOrderByPhrase()
+        {
+            Console.WriteLine("\nTestMultipleOrderByPhrase():");
+            var employees = MakeEmployees();
+
+            // 不適切。シーケンス全体が3回ソートされる
+            var people = from e in employees
+                         where e.Age > 30
+                         orderby e.LastName
+                         orderby e.FirstName
+                         orderby e.Age
+                         select e;
+
+            foreach (var p in people)
+                Console.WriteLine(p);
+        }
+
         static void Main(string[] args)
         {
             TestOrderByPhrase();
-            TestOrderByMethod();
+            TestOrderByThenByMethod();
+            TestMultipleOrderByPhrase();
         }
     }
 }
