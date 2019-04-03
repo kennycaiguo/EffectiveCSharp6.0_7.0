@@ -303,7 +303,8 @@
 	・orderby句を使用した例題と、それが変換されたOrderBy、OrderByDescending、ThenBy、
 	　ThenByDescendingメソッドのコードを確認する
 		・複数の比較項目を持つorderBy句が、OrderByとThenByメソッドに変換されること
-		・複数のoederby句を誤ってしてしたソート
+		・複数のorderby句を誤ってしてしたソート
+		・orderby句が一部 descendingを含む場合、OrderByDescending、ThenByメソッドに変換されること
 (プロジェクト)
 	OrderByThenMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ
