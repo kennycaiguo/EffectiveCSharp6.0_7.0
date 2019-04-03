@@ -308,3 +308,12 @@
 (プロジェクト)
 	OrderByThenMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ
+
+・2019.04.03：group句とGroupByメソッド
+(概要)
+	・group句を使用した例題と、group句が変換されたGroupByメソッドのコードを確認する
+		・継続を含むgroup句、ネストしたクエリを含むgroup句、これを変換したGroupByメソッド
+		・グループ内にシーケンスを含むselect句と、Selectメソッド
+(プロジェクト)
+	WhereMethod：テストプログラム
+	LinqAnalizer:Linqを分析するライブラリ
