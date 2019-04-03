@@ -272,7 +272,7 @@
 	PersonLib：外部参照ライブラリ。Personクラスを定義する
 
 
-2019.03.31
+2019.03.31、2019.04.02、2019.04.03
 項目36：クエリ式とメソッド呼び出しの対応を把握する
 
 ・2019.03.31：where句とWhereメソッド
@@ -298,11 +298,12 @@
 	WhereMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ
 
-・2019.04.02：orderBy句と　OrderBy, OrderByDescending、ThenBy、ThenByDescendingメソッド
+・2019.04.02、2019.04.03：orderby句と　OrderBy, OrderByDescending、ThenBy、ThenByDescendingメソッド
 (概要)
-	・orderBy句を使用した例題と、それが変換されたOrderBy、OrderByDescending、ThenBy、
+	・orderby句を使用した例題と、それが変換されたOrderBy、OrderByDescending、ThenBy、
 	　ThenByDescendingメソッドのコードを確認する
 		・複数の比較項目を持つorderBy句が、OrderByとThenByメソッドに変換されること
+		・複数のoederby句を誤ってしてしたソート
 (プロジェクト)
 	OrderByThenMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ

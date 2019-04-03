@@ -33,9 +33,9 @@ namespace OrderByThenByMethod
             return employees;
         }
 
-        static void TestOrderByPhrase()
+        static void Test_orderbyPhrase()
         {
-            Console.WriteLine("TestOrderByPhrase():");
+            Console.WriteLine("Test_orderbyPhrase():");
 
             var employees = MakeEmployees();
             var people = from e in employees
@@ -80,9 +80,9 @@ namespace OrderByThenByMethod
         }
         */
 
-        static void TestMultipleOrderByPhrase()
+        static void TestMultiple_orderbyPhrase()
         {
-            Console.WriteLine("\nTestMultipleOrderByPhrase():");
+            Console.WriteLine("\nTestMultiple_orderbyPhrase():");
             var employees = MakeEmployees();
 
             // 不適切。シーケンス全体が3回ソートされる
@@ -97,11 +97,41 @@ namespace OrderByThenByMethod
                 Console.WriteLine(p);
         }
 
+        static void Test_orderby_descendingPhrase()
+        {
+            Console.WriteLine("\nTest_orderby_descendingPhrase():");
+
+            var employees = MakeEmployees();
+            var people = from e in employees
+                         where e.Age > 30
+                         orderby e.LastName descending, e.FirstName, e.Age
+                         select e;
+
+            foreach (var p in people)
+                Console.WriteLine(p);
+        }
+
+        static void TestOrderByDescendingThenByMethod()
+        {
+            Console.WriteLine("\nTestOrderByDescendingThenByMethod():");
+
+            var employees = MakeEmployees();
+            var people = employees.Where(e => e.Age > 30).
+                        OrderByDescending(e => e.LastName).
+                        ThenBy(e => e.FirstName).
+                        ThenBy(e => e.Age);
+
+            foreach (var p in people)
+                Console.WriteLine(p);
+        }
+
         static void Main(string[] args)
         {
-            TestOrderByPhrase();
+            Test_orderbyPhrase();
             TestOrderByThenByMethod();
-            TestMultipleOrderByPhrase();
+            TestMultiple_orderbyPhrase();
+            Test_orderby_descendingPhrase();
+            TestOrderByDescendingThenByMethod();
         }
     }
 }
