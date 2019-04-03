@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectMethod", "SelectMetho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByThenByMethod", "OrderByThenByMethod\OrderByThenByMethod.csproj", "{C02F158E-D29D-4D32-82AF-967CAF2A606F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupByMethod", "GroupByMethod\GroupByMethod.csproj", "{5FD0C2FD-E36D-4391-974E-5E0CC319B0D2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C02F158E-D29D-4D32-82AF-967CAF2A606F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C02F158E-D29D-4D32-82AF-967CAF2A606F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C02F158E-D29D-4D32-82AF-967CAF2A606F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD0C2FD-E36D-4391-974E-5E0CC319B0D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD0C2FD-E36D-4391-974E-5E0CC319B0D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD0C2FD-E36D-4391-974E-5E0CC319B0D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD0C2FD-E36D-4391-974E-5E0CC319B0D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
