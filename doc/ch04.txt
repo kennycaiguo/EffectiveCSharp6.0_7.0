@@ -318,10 +318,13 @@
 	WhereMethod：テストプログラム
 	LinqAnalizer:Linqを分析するライブラリ
 
-・2019.04.06：select句とSelectManyメソッド
+・2019.04.06：複数のfrom句とSelectManyメソッド
 (概要)
-	・select句を使用した例題と、select句が変換されたSelectManyメソッドのコードを確認する
-		・select句の基本的な利用例
+	・複数のfrom句を使用した例題と、それが変換されたSelectManyメソッドのコードを確認する
+		・２つのfrom句の基本的な利用例と変換されたSelectManyメソッド
+		・SelectManyメソッドの実装例
+		・2つのfrom句とwhereメソッドの組み合わせ、変換されたSelectMany、Whare、Selectメソッド
+		・３つのfrom句と、変換された２つのSelectManyメソッド
 (プロジェクト)
 	SelectManyMethod：テストプログラム
 (コメント)
