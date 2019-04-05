@@ -82,12 +82,33 @@ namespace SelectManyMethod
                 Console.WriteLine(item);
         }
 
+        static void Test_SelectMany_WhereMethod()
+        {
+            Console.WriteLine("\nTest_SelectMany_WhereMethod():");
+
+            int[] odds = { 1, 3, 5, 7 };
+            int[] evens = { 2, 4, 6, 8 };
+            var pairs = odds.SelectMany(oddNumber => evens,
+                        (oddNumber, evenNumber) =>
+                        new { oddNumber, evenNumber}).
+                        Where(pair => pair.oddNumber > pair.evenNumber).
+                        Select(pair => new
+                        {
+                            pair.oddNumber,
+                            pair.evenNumber,
+                            Sum = pair.oddNumber + pair.evenNumber
+                        });
+            foreach (var item in pairs)
+                Console.WriteLine(item);
+        }
+
         static void Main(string[] args)
         {
             Test_selectPhrase();
             Test_SelectManyMethod();
             Test_SelectManyImplement();
             Test_select_wherePhrase();
+            Test_SelectMany_WhereMethod();
         }
     }
 }
