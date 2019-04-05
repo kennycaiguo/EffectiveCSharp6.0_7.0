@@ -70,11 +70,32 @@ namespace JoinGroupJoinMethod
             }
         }
 
+        static void Test_GroupJoinMethod()
+        {
+            Console.WriteLine("\nTest_GroupJoinMethod():");
+
+            Project[] projects;
+            Task[] tasks;
+            SetupProject(out projects, out tasks);
+
+            var groups = projects.GroupJoin(tasks,
+                p => p, t => t.Parent, (p, projTasks) =>
+                    new { Project = p, TaskList = projTasks });
+
+            foreach (var proj in groups)
+            {
+                Console.WriteLine($"{proj.Project}:");
+                foreach (var task in proj.TaskList)
+                    Console.WriteLine($"\t{task}");
+            }
+        }
+
         static void Main(string[] args)
         {
             Test_joinPhrase();
             Test_JoinMethod();
             Test_join_into_Phrase();
+            Test_GroupJoinMethod();
         }
     }
 }
