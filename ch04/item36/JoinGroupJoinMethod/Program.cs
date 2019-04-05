@@ -22,9 +22,23 @@ namespace JoinGroupJoinMethod
                 Console.WriteLine(item);
         }
 
+        static void Test_JoinMethod()
+        {
+            Console.WriteLine("\nTest_JoinMethod():");
+
+            var numbers = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            var labels = new string[] { "0", "1", "2", "3", "4", "5" };
+            var query = numbers.Join(labels, num => num.ToString(),
+                label => label, (num, label) => new { num, label });
+
+            foreach (var item in query)
+                Console.WriteLine(item);
+        }
+
         static void Main(string[] args)
         {
             Test_joinPhrase();
+            Test_JoinMethod();
         }
     }
 }
