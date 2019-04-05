@@ -63,11 +63,31 @@ namespace SelectManyMethod
         }
 
 
+        static void Test_select_wherePhrase()
+        {
+            Console.WriteLine("\nTest_select_wherePhase():");
+
+            int[] odds = { 1, 3, 5, 7 };
+            int[] evens = { 2, 4, 6, 8 };
+            var pairs = from oddNumber in odds
+                        from evenNumber in evens
+                        where oddNumber > evenNumber
+                        select new
+                        {
+                            oddNumber,
+                            evenNumber,
+                            Sum = oddNumber + evenNumber
+                        };
+            foreach (var item in pairs)
+                Console.WriteLine(item);
+        }
+
         static void Main(string[] args)
         {
             Test_selectPhrase();
             Test_SelectManyMethod();
             Test_SelectManyImplement();
+            Test_select_wherePhrase();
         }
     }
 }
