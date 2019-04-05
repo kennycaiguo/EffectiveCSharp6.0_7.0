@@ -333,3 +333,10 @@
 	・拡張メソッドは、staticクラスのpublic static メソッドして定義しなけらばならない
 	　Programクラスのstaticメソッドとして拡張メソッドを定義すると、Programクラスからも
 	　探せなくなる
+
+・2019.04.06：join句とJoin、GroupJoinメソッド
+(概要)
+	・join句を使用した例題と、join句が変換されたJoinメソッド、GroupJoinメソッドのコードを確認する
+		・join句の使用例とそれが変換されたJoinメソッド
+(プロジェクト)
+	WhereMethod：テストプログラム
