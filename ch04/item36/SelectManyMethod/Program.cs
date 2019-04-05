@@ -8,9 +8,9 @@ namespace SelectManyMethod
 {
     class Program
     {
-        static void Test_selectPhrase()
+        static void Test_multiple_fromPhrase()
         {
-            Console.WriteLine("Test_selectPhase():");
+            Console.WriteLine("Test_multiple_fromPhase():");
 
             int[] odds = { 1, 3, 5, 7 };
             int[] evens = { 2, 4, 6, 8 };
@@ -63,9 +63,9 @@ namespace SelectManyMethod
         }
 
 
-        static void Test_select_wherePhrase()
+        static void Test_multiple_from_wherePhrase()
         {
-            Console.WriteLine("\nTest_select_wherePhase():");
+            Console.WriteLine("\nTest_multiple_from_wherePhase():");
 
             int[] odds = { 1, 3, 5, 7 };
             int[] evens = { 2, 4, 6, 8 };
@@ -104,10 +104,10 @@ namespace SelectManyMethod
 
         static void Main(string[] args)
         {
-            Test_selectPhrase();
+            Test_multiple_fromPhrase();
             Test_SelectManyMethod();
             Test_SelectManyImplement();
-            Test_select_wherePhrase();
+            Test_multiple_from_wherePhrase();
             Test_SelectMany_WhereMethod();
         }
     }
