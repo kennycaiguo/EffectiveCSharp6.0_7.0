@@ -102,6 +102,38 @@ namespace SelectManyMethod
                 Console.WriteLine(item);
         }
 
+        static void Test_triple_fromPhrase()
+        {
+            Console.WriteLine("Test_triple_fromPhase():");
+
+            var triples = from n in new int[] { 1, 2, 3 }
+                          from s in new string[] { "one", "two", "three" }
+                          from r in new string[] { "I", "II", "III" }
+                          select new { Arabic = n, Word = s, Roman = r };
+            foreach (var item in triples)
+                Console.WriteLine(item);
+
+        }
+
+        static void Test_double_SelectManyMethod()
+        {
+            Console.WriteLine("\nTest_double_SelectManyMethod():");
+
+            var numbers = new int[] { 1, 2, 3 };
+            var words = new string[] { "one", "two", "three" };
+            var romanNumerals = new string[] { "I", "II", "III" };
+            var triples = numbers.SelectMany(n => words,
+                (n, s) => new { n, s }).
+                SelectMany(pair => romanNumerals,
+                (pair, r) => new {
+                    Arablic = pair.n,
+                    Word = pair.s,
+                    Roman = r
+                });
+            foreach (var item in triples)
+                Console.WriteLine(item);
+        }
+
         static void Main(string[] args)
         {
             Test_multiple_fromPhrase();
@@ -109,6 +141,8 @@ namespace SelectManyMethod
             Test_SelectManyImplement();
             Test_multiple_from_wherePhrase();
             Test_SelectMany_WhereMethod();
+            Test_triple_fromPhrase();
+            Test_double_SelectManyMethod();
         }
     }
 }
