@@ -386,8 +386,18 @@
 	・シーケンスの走査中にEmployee要素のSalaryプロパティーを変更する例。
 	　Action内で例外をスローすると、シーケンスの一部が更新され、一部は未更新となり、
 	　矛盾した状態となる
-	・Salaryプロパティの無効な値として、MinValueを用いる
+	・Salaryプロパティの無効な値として、ManValueを用いる
 	（1.05M倍すると、OverflowExceptionを発生する）
 (プロジェクト)
 	ExceptonInSequence：テストプログラム
+	EmployeeLib：Employeeクラスのライブラリ
+
+・2019.04.13、2019.04.14：シーケンスの走査中に要素を変更しないAction内で例外をスローする
+(概要)
+	・シーケンスの走査中にEmployee要素を参照する例として、従業員全員の合計を計算する
+	　Action内で例外をスローしても、元のシーケンスは変更されないので、矛盾した状態とはならない
+	・Salaryプロパティの無効な値として、MaxValueを用いる
+	（Salaryの合計をとるとOverflowExceptionを発生する）
+(プロジェクト)
+	SumupSalary：テストプログラム
 	EmployeeLib：Employeeクラスのライブラリ
