@@ -390,3 +390,4 @@
 	（1.05M倍すると、OverflowExceptionを発生する）
 (プロジェクト)
 	ExceptonInSequence：テストプログラム
+	EmployeeLib：Employeeクラスのライブラリ
