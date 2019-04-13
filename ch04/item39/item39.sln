@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionInSequence", "Exce
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeLib", "EmployeeLib\EmployeeLib.csproj", "{D83F26DE-1F1A-4A4D-8159-9948502C2EE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumupSalary", "SumupSalary\SumupSalary.csproj", "{95963EF9-F352-4104-8613-36ADB423D842}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D83F26DE-1F1A-4A4D-8159-9948502C2EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D83F26DE-1F1A-4A4D-8159-9948502C2EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D83F26DE-1F1A-4A4D-8159-9948502C2EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95963EF9-F352-4104-8613-36ADB423D842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95963EF9-F352-4104-8613-36ADB423D842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95963EF9-F352-4104-8613-36ADB423D842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95963EF9-F352-4104-8613-36ADB423D842}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

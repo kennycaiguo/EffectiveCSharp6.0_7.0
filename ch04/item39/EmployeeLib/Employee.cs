@@ -57,7 +57,7 @@ namespace EmployeeLib
                 EmployeeID = 10002,
                 Classification = Classification.Retired,
                 YearsOfService = 31,
-                MonthlySalary = decimal.MinValue
+                MonthlySalary = decimal.MaxValue
             }
             );
             employees.Add(new Employee
