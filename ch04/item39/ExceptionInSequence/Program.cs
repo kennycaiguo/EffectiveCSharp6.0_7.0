@@ -15,21 +15,45 @@ namespace ExceptionInSequence
                 EmployeeID = 10001,
                 Classification = Classification.Salary,
                 YearsOfService = 21,
-                MonthlySalary = 56.7M }
+                MonthlySalary = 50.0M }
             );
             employees.Add(new Employee
             {
-                EmployeeID = 10002,
-                Classification = Classification.Retired,
-                YearsOfService = 11,
-                MonthlySalary = 0 }
+                EmployeeID = 10001,
+                Classification = Classification.Salary,
+                YearsOfService = 21,
+                MonthlySalary = 30.0M
+            }
             );
             employees.Add(new Employee
             {
                 EmployeeID = 10003,
                 Classification = Classification.Manager,
                 YearsOfService = 23,
-                MonthlySalary = 78.9M
+                MonthlySalary = 60.0M
+            }
+            );
+            employees.Add(new Employee
+            {
+                EmployeeID = 10002,
+                Classification = Classification.Retired,
+                YearsOfService = 11,
+                MonthlySalary = decimal.MinValue }
+            );
+            employees.Add(new Employee
+            {
+                EmployeeID = 10003,
+                Classification = Classification.Manager,
+                YearsOfService = 23,
+                MonthlySalary = 70.0M
+            }
+            );
+            employees.Add(new Employee
+            {
+                EmployeeID = 10001,
+                Classification = Classification.Salary,
+                YearsOfService = 21,
+                MonthlySalary = 40.0M
             }
             );
             return employees;
@@ -40,11 +64,7 @@ namespace ExceptionInSequence
             var allEmployees = FindAllEmployees();
             try
             {
-                allEmployees.ForEach(e => {
-                    if (e.MonthlySalary == 0)
-                        throw new ArithmeticException("singular value");
-                    else e.MonthlySalary *= 1.05M;
-                });
+                allEmployees.ForEach(e => e.MonthlySalary *= 1.05M);
             }
             catch (Exception e)
             {
