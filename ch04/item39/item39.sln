@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeLib", "EmployeeLib\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumupSalary", "SumupSalary\SumupSalary.csproj", "{95963EF9-F352-4104-8613-36ADB423D842}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IgnoreInvalidElements", "IgnoreInvalidElements\IgnoreInvalidElements.csproj", "{7AE9FAF3-4CA5-4461-9BC0-FC96F24B054E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{95963EF9-F352-4104-8613-36ADB423D842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95963EF9-F352-4104-8613-36ADB423D842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95963EF9-F352-4104-8613-36ADB423D842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE9FAF3-4CA5-4461-9BC0-FC96F24B054E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE9FAF3-4CA5-4461-9BC0-FC96F24B054E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE9FAF3-4CA5-4461-9BC0-FC96F24B054E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE9FAF3-4CA5-4461-9BC0-FC96F24B054E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

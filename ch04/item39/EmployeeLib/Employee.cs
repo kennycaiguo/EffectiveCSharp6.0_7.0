@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace EmployeeLib
 {
-    public enum Classification
+    public enum EmployeeType
     {
         Salary,
         Manager,
-        Retired
+        Retired,
     }
 
     public class Employee
     {
         public int EmployeeID { get; set; }
-        public Classification Classification { get; set; }
+        public EmployeeType Classification { get; set; }
         public int YearsOfService { get; set; }
         public decimal MonthlySalary { get; set; }
 
@@ -31,15 +31,15 @@ namespace EmployeeLib
             employees.Add(new Employee
             {
                 EmployeeID = 10001,
-                Classification = Classification.Salary,
+                Classification = EmployeeType.Salary,
                 YearsOfService = 11,
                 MonthlySalary = 50.0M
             }
             );
             employees.Add(new Employee
             {
-                EmployeeID = 10001,
-                Classification = Classification.Salary,
+                EmployeeID = 10002,
+                Classification = EmployeeType.Salary,
                 YearsOfService = 5,
                 MonthlySalary = 30.0M
             }
@@ -47,31 +47,31 @@ namespace EmployeeLib
             employees.Add(new Employee
             {
                 EmployeeID = 10003,
-                Classification = Classification.Manager,
+                Classification = EmployeeType.Manager,
                 YearsOfService = 21,
                 MonthlySalary = 60.0M
             }
             );
             employees.Add(new Employee
             {
-                EmployeeID = 10002,
-                Classification = Classification.Retired,
+                EmployeeID = 10004,
+                Classification = EmployeeType.Retired,
                 YearsOfService = 31,
                 MonthlySalary = decimal.MaxValue
             }
             );
             employees.Add(new Employee
             {
-                EmployeeID = 10003,
-                Classification = Classification.Manager,
+                EmployeeID = 10005,
+                Classification = EmployeeType.Manager,
                 YearsOfService = 23,
                 MonthlySalary = 70.0M
             }
             );
             employees.Add(new Employee
             {
-                EmployeeID = 10001,
-                Classification = Classification.Salary,
+                EmployeeID = 10006,
+                Classification = EmployeeType.Salary,
                 YearsOfService = 7,
                 MonthlySalary = 40.0M
             }
