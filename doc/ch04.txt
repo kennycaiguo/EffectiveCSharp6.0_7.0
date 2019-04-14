@@ -392,7 +392,7 @@
 	ExceptonInSequence：テストプログラム
 	EmployeeLib：Employeeクラスのライブラリ
 
-・2019.04.13、2019.04.14：シーケンスの走査中に要素を変更しないAction内で例外をスローする
+・2019.04.14：シーケンスの走査中に要素を変更しないAction内で例外をスローする
 (概要)
 	・シーケンスの走査中にEmployee要素を参照する例として、従業員全員の合計を計算する
 	　Action内で例外をスローしても、元のシーケンスは変更されないので、矛盾した状態とはならない
@@ -400,4 +400,13 @@
 	（Salaryの合計をとるとOverflowExceptionを発生する）
 (プロジェクト)
 	SumupSalary：テストプログラム
+	EmployeeLib：Employeeクラスのライブラリ
+
+・2019.04.14：エラーが発生する要素を無視する
+(概要)
+	・シーケンスの要素の中でAction（Salaryを1.05M倍する）実行時にエラーが発生する要素を無視する
+	　具体的には、Lis<>.FindAllメソッドを使用して、エラーの発生しない要素だけを集めて
+	　Actionを適用する
+(プロジェクト)
+	IgnoreInvalidElements：テストプログラム
 	EmployeeLib：Employeeクラスのライブラリ
