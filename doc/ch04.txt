@@ -410,3 +410,22 @@
 (プロジェクト)
 	IgnoreInvalidElements：テストプログラム
 	EmployeeLib：Employeeクラスのライブラリ
+
+・2019.04.14：シーケンスのコピーに対して変更した後、成功した場合にオリジナルを置換する
+(概要)
+	・Employeeリストのコピーを作成し、コピーに対してSalaryを1.05M倍する
+	　もし、この過程でエラーが発生しなかった場合に限り、更新されたコピーを
+	　オリジナルのリストに置換する
+(プロジェクト)
+	ModifyCopyThenUpdate：テストプログラム
+	EmployeeLib：Employeeクラスのライブラリ
+(コメント)
+	テキストで、オリジナルのリストをコピーして修正する際、
+	
+		MonthlySalary = e.MonthlySalary *= 1.05M
+
+	とすると、オリジナルのリストそのものを変更してしまう(*=演算子を使うので）
+	以下のように修正
+
+		MonthlySalary = e.MonthlySalary * 1.05M
+	
