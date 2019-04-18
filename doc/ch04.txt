@@ -444,3 +444,12 @@
 	Extensions.Generatorが作成するIEnumerable<int>　
 	⇒　IEnumerableが内部で保持するデリゲートFunc<int>
 	⇒　デリゲートが参照するメンバ関数を含むクロージャ
+
+・2019.04.18：CSVをパースして、行と要素が入れ子になったシーケンスを返す
+(概要)
+	・CSVファイルをオープンしたReaderオブジェクトを与えて、CSVの各行、各要素のシーケンス
+	　IEnumerable<IEnumerable<int>>を返す関数の例
+	・呼び出し元に、CSVファイルに対応したReaderをクローズするタイミングを与えることできない
+	　ことが問題となる
+(プロジェクト)
+	EnumerableCSV：テストプログラム
