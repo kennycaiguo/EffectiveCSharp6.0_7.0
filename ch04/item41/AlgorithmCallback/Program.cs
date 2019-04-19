@@ -34,8 +34,10 @@ namespace AlgorithmCallback
             }
         }
 
-        static void Main(string[] args)
+        static void TestDump()
         {
+            WriteLine("TestDump():");
+
             //　使用例：ファイル名と、ファイルをの各行に対して実行する処理を
             //　引数として指定する
             ProcessFile(DIR + "TestFile.txt",
@@ -52,6 +54,23 @@ namespace AlgorithmCallback
                     return 0;
                 }
             );
+        }
+
+        static void TestMax()
+        {
+            WriteLine("TestDump():");
+
+            var maximum = ProcessFile(DIR + "TestFile.txt",
+                (arrayOfNums) =>
+                    (from line in arrayOfNums
+                     select line.Max()).Max());
+            WriteLine($"maximum: {maximum}");
+        }
+
+        static void Main(string[] args)
+        {
+            TestDump();
+            TestMax();
         }
     }
 }
