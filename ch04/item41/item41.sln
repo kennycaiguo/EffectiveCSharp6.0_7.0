@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParseCSVFile", "ParseCSVFil
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposableClosure", "DisposableClosure\DisposableClosure.csproj", "{A51002C6-A9F5-429C-BEE7-384E39FDE0D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlgorithmCallback", "AlgorithmCallback\AlgorithmCallback.csproj", "{B8949B49-DEE2-4F5B-B31E-8C4B4669243B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A51002C6-A9F5-429C-BEE7-384E39FDE0D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A51002C6-A9F5-429C-BEE7-384E39FDE0D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A51002C6-A9F5-429C-BEE7-384E39FDE0D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8949B49-DEE2-4F5B-B31E-8C4B4669243B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8949B49-DEE2-4F5B-B31E-8C4B4669243B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8949B49-DEE2-4F5B-B31E-8C4B4669243B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8949B49-DEE2-4F5B-B31E-8C4B4669243B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
