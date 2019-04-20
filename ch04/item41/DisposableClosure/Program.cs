@@ -38,8 +38,11 @@ namespace DisposableClosure
         static IEnumerable<int> SomeFunction2()
         {
             var c = new Closure();
-            for (; ; )
-                yield return c.GetNextNumber();
+            /*
+                        for (; ; )
+                            yield return c.GetNextNumber();
+            */
+            return Extensions.Generate(new Func<int>(c.GetNextNumber));
         }
 
         static IEnumerable<int> SomeFunction3()
