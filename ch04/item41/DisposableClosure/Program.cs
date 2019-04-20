@@ -19,6 +19,11 @@ namespace DisposableClosure
             {
                 WriteLine("破棄中です");
             }
+
+            ~Closure()
+            {
+                WriteLine("Finalizing");
+            }
         }
 
         static IEnumerable<int> SomeFunction()
