@@ -24,6 +24,26 @@ namespace ClosureSharedBy2Queries
                    select num;
         }
 
+        private static IEnumerable<int> NonLeakingClosure(int mod)
+        {
+            var importantStatistic = GenerateImportantStatistic();
+
+            var results = new CheapNumberGenerator();
+            return from num in results.GetNumbers(100)
+                   where num > importantStatistic
+                   select num;
+        }
+
+        private static double GenerateImportantStatistic()
+        {
+            var filter = new ResourceHogFilter();
+            var source = new CheapNumberGenerator();
+
+            return (from num in source.GetNumbers(50)
+                    where filter.ParsesFilter(num)
+                    select num).Average();
+        }
+
         static void TestLeakingClosure()
         {
             Console.WriteLine("TestLeakingClosure():");
@@ -43,10 +63,24 @@ namespace ClosureSharedBy2Queries
             System.GC.Collect(); // アクセス不可能なオブジェクトを除去
             System.GC.WaitForPendingFinalizers(); // ファイナライゼーションが終わるまでスレッド待機
             System.GC.Collect(); // ファイナライズされたばかりのオブジェクトに関連するメモリを開放
+        }
 
-            sequence = null;
+        static void TestNonLeakingClosure()
+        {
+            Console.WriteLine("TestNonLeakingClosure():");
 
-            Console.WriteLine("collecting garbage after sequence = null");
+            var sequence = NonLeakingClosure(100);
+
+            Console.WriteLine("collecting garbage after sequence = NonLeakingClosure()");
+            System.GC.Collect(); // アクセス不可能なオブジェクトを除去
+            System.GC.WaitForPendingFinalizers(); // ファイナライゼーションが終わるまでスレッド待機
+            System.GC.Collect(); // ファイナライズされたばかりのオブジェクトに関連するメモリを開放
+
+            foreach (var e in sequence)
+                Console.Write($"{e} ");
+            Console.WriteLine();
+
+            Console.WriteLine("collecting garbage after foreach (... in sequence)");
             System.GC.Collect(); // アクセス不可能なオブジェクトを除去
             System.GC.WaitForPendingFinalizers(); // ファイナライゼーションが終わるまでスレッド待機
             System.GC.Collect(); // ファイナライズされたばかりのオブジェクトに関連するメモリを開放
@@ -55,6 +89,16 @@ namespace ClosureSharedBy2Queries
         static void Main(string[] args)
         {
             TestLeakingClosure();
+            Console.WriteLine("collecting garbage after TestLeakingClosure() returned");
+            System.GC.Collect(); // アクセス不可能なオブジェクトを除去
+            System.GC.WaitForPendingFinalizers(); // ファイナライゼーションが終わるまでスレッド待機
+            System.GC.Collect(); // ファイナライズされたばかりのオブジェクトに関連するメモリを開放
+
+            TestNonLeakingClosure();
+            Console.WriteLine("collecting garbage after TestNonLeakingClosure() returned");
+            System.GC.Collect(); // アクセス不可能なオブジェクトを除去
+            System.GC.WaitForPendingFinalizers(); // ファイナライゼーションが終わるまでスレッド待機
+            System.GC.Collect(); // ファイナライズされたばかりのオブジェクトに関連するメモリを開放
         }
     }
 }
