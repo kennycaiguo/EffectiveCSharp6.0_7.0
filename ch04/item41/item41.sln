@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpensiveClosure", "Expensi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosureSharedBy2Queries", "ClosureSharedBy2Queries\ClosureSharedBy2Queries.csproj", "{9205AADF-2B72-48B9-B707-5EB41F39F970}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnotherSequence", "AnotherSequence\AnotherSequence.csproj", "{6F1C9830-F58E-493E-AEBB-912C390CD4D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{9205AADF-2B72-48B9-B707-5EB41F39F970}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9205AADF-2B72-48B9-B707-5EB41F39F970}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9205AADF-2B72-48B9-B707-5EB41F39F970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F1C9830-F58E-493E-AEBB-912C390CD4D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F1C9830-F58E-493E-AEBB-912C390CD4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F1C9830-F58E-493E-AEBB-912C390CD4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F1C9830-F58E-493E-AEBB-912C390CD4D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
