@@ -58,10 +58,37 @@ namespace SingleMethod
             }
         }
 
+        static void TestSingleOrDefault()
+        {
+            Console.WriteLine("TestSingleOrDefault():");
+
+            var somePeople = new List<Person>
+            {
+                new Person { FirstName = "Bill", LastName = "Gates" },
+                new Person { FirstName = "Bill", LastName = "Wagner" },
+                new Person { FirstName = "Bill", LastName = "Johnson" }
+            };
+
+            // シーケンス内に複数の該当データが存在するため
+            //　例外がスローされる
+            try
+            {
+                var answer = (from p in somePeople
+                              where p.FirstName == "Larry"
+                              select p).SingleOrDefault();
+                Console.WriteLine("answer is null ? " + (answer == null));
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+        }
+
         static void Main(string[] args)
         {
             TestNotSingleElement();
             TestZeroElement();
+            TestSingleOrDefault();
         }
     }
 }
